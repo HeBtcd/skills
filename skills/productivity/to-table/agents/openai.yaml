@@ -1,0 +1,7 @@
+interface:
+  display_name: "To Table"
+  short_description: "Render data structures as small KV tables"
+  default_prompt: "Use $to-table to render this data structure as the smallest useful KV table or set of related tables."
+
+policy:
+  allow_implicit_invocation: false

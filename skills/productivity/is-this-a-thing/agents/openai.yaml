@@ -1,0 +1,7 @@
+interface:
+  display_name: "Is This a Thing?"
+  short_description: "Recover established structures from local descriptions"
+  default_prompt: "Use $is-this-a-thing to return an established structural match or the exact unresolved mismatch."
+
+policy:
+  allow_implicit_invocation: false

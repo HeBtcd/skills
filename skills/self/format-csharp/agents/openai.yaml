@@ -1,0 +1,7 @@
+interface:
+  display_name: "Format CSharp"
+  short_description: "Guard-clause one-liners, brace work blocks, compact types"
+  default_prompt: "Use $format-csharp to format this C# code."
+
+policy:
+  allow_implicit_invocation: false

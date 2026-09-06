@@ -1,0 +1,7 @@
+interface:
+  display_name: "Divergent Thinking"
+  short_description: "Open the solution space before choosing"
+  default_prompt: "Use $divergent-thinking to explore materially different alternatives and the information needed to choose between them."
+
+policy:
+  allow_implicit_invocation: false

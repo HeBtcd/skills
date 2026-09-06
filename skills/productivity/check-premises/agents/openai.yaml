@@ -1,0 +1,7 @@
+interface:
+  display_name: "Check Premises"
+  short_description: "Stop unsupported premises before they shape the result"
+  default_prompt: "Use $check-premises to verify result-changing premises and keep unsupported ones unresolved before dependent action."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Hands-On"
+  short_description: "Keep design and verification with the manager"
+  default_prompt: "Use $hands-on to keep design and verification with the manager and bounded implementation with a capable implementer."
+
+policy:
+  allow_implicit_invocation: false

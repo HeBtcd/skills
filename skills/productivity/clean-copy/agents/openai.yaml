@@ -1,0 +1,7 @@
+interface:
+  display_name: "Clean Copy"
+  short_description: "Keep working instructions out of audience-facing artifacts"
+  default_prompt: "Use $clean-copy to separate working instructions from audience content and regenerate any contaminated result."
+
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,6 @@
+interface:
+  display_name: "With Docs"
+  short_description: "Turn current work into usable documentation"
+  default_prompt: "Use $with-docs alongside the current task to write its results as documentation for the intended reader."
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Functional Programming"
+  short_description: "Compose transformations with explicit state and effect contracts"
+  default_prompt: "Use $functional-programming to return a design for composable transformations, legal states, and explicit effects, with illustrative code and unresolved constraints."
+
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Reverse Engineering"
+  short_description: "Prove binary behavior with falsifiable runtime evidence"
+  default_prompt: "Use $reverse-engineering to explain this binary behavior from available evidence and specify the missing observations that would distinguish competing explanations."
+
+policy:
+  allow_implicit_invocation: false

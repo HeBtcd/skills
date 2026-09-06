@@ -1,0 +1,7 @@
+interface:
+  display_name: "Counterexample"
+  short_description: "Falsify consequential general claims early"
+  default_prompt: "Use $counterexample to return refuted or not refuted with the exact search boundary."
+
+policy:
+  allow_implicit_invocation: false

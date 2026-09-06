@@ -1,0 +1,13 @@
+{
+  "name": "hebtcd",
+  "owner": {
+    "name": "HeBtcd"
+  },
+  "plugins": [
+    {
+      "name": "skills",
+      "source": "./",
+      "description": "Skills for code analysis, reasoning, and collaboration."
+    }
+  ]
+}

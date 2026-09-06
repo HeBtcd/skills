@@ -1,0 +1,7 @@
+interface:
+  display_name: "Performance Engineering"
+  short_description: "Analyze resource cost and propose measurable improvements"
+  default_prompt: "Use $performance-engineering to analyze total cost under this workload and propose improvements, separating measured evidence from predicted gains."
+
+policy:
+  allow_implicit_invocation: false

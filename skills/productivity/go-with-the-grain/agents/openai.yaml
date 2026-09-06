@@ -1,0 +1,7 @@
+interface:
+  display_name: "Go With the Grain"
+  short_description: "Match the structure of an existing pattern"
+  default_prompt: "Use $go-with-the-grain to make this correspond to the existing pattern, preserving relevant structure and explaining necessary differences."
+
+policy:
+  allow_implicit_invocation: false

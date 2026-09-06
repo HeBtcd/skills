@@ -1,0 +1,7 @@
+interface:
+  display_name: "Just Throw"
+  short_description: "Throw typed errors without maintaining prose"
+  default_prompt: "Use $just-throw to review failure signals and, when editing is requested, remove redundant error prose while preserving required diagnostics and consumer contracts."
+
+policy:
+  allow_implicit_invocation: false

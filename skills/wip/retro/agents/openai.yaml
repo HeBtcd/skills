@@ -1,0 +1,7 @@
+interface:
+  display_name: "Retro"
+  short_description: "Attribute a task failure and propose a supported correction"
+  default_prompt: "Use $retro to diagnose this task failure and return an evidence-backed skill correction proposal with a distinguishing check."
+
+policy:
+  allow_implicit_invocation: false

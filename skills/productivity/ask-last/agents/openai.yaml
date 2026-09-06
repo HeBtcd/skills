@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ask Last"
+  short_description: "Resolve only uncertainty that can change the result"
+  default_prompt: "Use $ask-last to resolve only the smallest information gap that can change the result."
+
+policy:
+  allow_implicit_invocation: false

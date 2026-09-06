@@ -1,0 +1,7 @@
+interface:
+  display_name: "Comment Code"
+  short_description: "Write only durable, necessary source comments"
+  default_prompt: "Use $comment-code to write or audit the necessary contracts and rationale comments, with unresolved contract gaps identified."
+
+policy:
+  allow_implicit_invocation: false

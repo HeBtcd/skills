@@ -1,0 +1,7 @@
+interface:
+  display_name: "Delegate"
+  short_description: "Delegate bounded work with ownership and a return route"
+  default_prompt: "Use $delegate to organize bounded assignments with explicit roles, ownership, isolation, and a supported return route."
+
+policy:
+  allow_implicit_invocation: false

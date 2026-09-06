@@ -1,0 +1,43 @@
+{
+  "name": "skills",
+  "version": "0.1.0",
+  "description": "Skills for code analysis, reasoning, and collaboration.",
+  "author": {
+    "name": "HeBtcd"
+  },
+  "license": "MIT",
+  "skills": [
+    "./skills/engineering/ablate-it",
+    "./skills/engineering/functional-programming",
+    "./skills/engineering/heap-allocations",
+    "./skills/engineering/performance-engineering",
+    "./skills/engineering/primitives",
+    "./skills/productivity/are-we-done",
+    "./skills/productivity/ask-last",
+    "./skills/productivity/check-premises",
+    "./skills/productivity/clean-copy",
+    "./skills/productivity/clean-history",
+    "./skills/productivity/counterexample",
+    "./skills/productivity/critically",
+    "./skills/productivity/data-flow",
+    "./skills/productivity/delegate",
+    "./skills/productivity/divergent-thinking",
+    "./skills/productivity/go-with-the-grain",
+    "./skills/productivity/hands-off",
+    "./skills/productivity/hands-on",
+    "./skills/productivity/is-that-right",
+    "./skills/productivity/is-this-a-thing",
+    "./skills/productivity/metacognitively",
+    "./skills/productivity/minimal-model",
+    "./skills/productivity/now-what",
+    "./skills/productivity/prove-infeasible",
+    "./skills/productivity/says-who",
+    "./skills/productivity/study-comparatively",
+    "./skills/productivity/take-stock",
+    "./skills/productivity/to-table",
+    "./skills/productivity/what-i-said",
+    "./skills/productivity/what-name",
+    "./skills/productivity/who-owns-this",
+    "./skills/productivity/with-docs"
+  ]
+}

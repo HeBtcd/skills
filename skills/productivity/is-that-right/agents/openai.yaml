@@ -1,0 +1,7 @@
+interface:
+  display_name: "Is That Right?"
+  short_description: "Reopen a judgment without reflexive reversal"
+  default_prompt: "Use $is-that-right to recheck this judgment against the evidence and strongest objection, then return whether to hold, revise, or leave it unresolved and what would change it."
+
+policy:
+  allow_implicit_invocation: true

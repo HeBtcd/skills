@@ -1,0 +1,7 @@
+interface:
+  display_name: "Metacognitively"
+  short_description: "Independent scrutiny of grounds for judgment"
+  default_prompt: "Use $metacognitively for an independent review of how this judgment was formed or revised, returning its evidential basis and remaining uncertainty."
+
+policy:
+  allow_implicit_invocation: true

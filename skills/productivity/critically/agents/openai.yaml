@@ -1,0 +1,7 @@
+interface:
+  display_name: "Critically"
+  short_description: "Independent scrutiny of claims and proposed solutions"
+  default_prompt: "Use $critically for an independent review of this claim or solution, returning supported objections, evidence limits, and the resulting judgment."
+
+policy:
+  allow_implicit_invocation: false

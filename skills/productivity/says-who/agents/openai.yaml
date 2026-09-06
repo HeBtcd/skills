@@ -1,0 +1,7 @@
+interface:
+  display_name: "Says Who?"
+  short_description: "Identify the basis for a behavior-changing choice"
+  default_prompt: "Use $says-who to return the authority or derivation supporting this choice, or the missing basis and competing outcomes."
+
+policy:
+  allow_implicit_invocation: false

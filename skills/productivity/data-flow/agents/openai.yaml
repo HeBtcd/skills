@@ -1,0 +1,7 @@
+interface:
+  display_name: "Data Flow"
+  short_description: "Show code as data transformations"
+  default_prompt: "Use $data-flow to recover this implementation's reads, transformations, writes, and outputs as a compact table."
+
+policy:
+  allow_implicit_invocation: false

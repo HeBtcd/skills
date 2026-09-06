@@ -1,0 +1,7 @@
+interface:
+  display_name: "Primitives"
+  short_description: "Identify basic operations and propose their composition"
+  default_prompt: "Use $primitives to find basic operations suited to this capability and show how they combine to provide its required behavior."
+
+policy:
+  allow_implicit_invocation: false

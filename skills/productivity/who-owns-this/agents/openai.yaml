@@ -1,0 +1,7 @@
+interface:
+  display_name: "Who Owns This?"
+  short_description: "Map behavior-changing knowledge to its responsible owner"
+  default_prompt: "Use $who-owns-this to return an evidence-backed mapping of behavior-changing facts to the authorities that can define and maintain them."
+
+policy:
+  allow_implicit_invocation: false
