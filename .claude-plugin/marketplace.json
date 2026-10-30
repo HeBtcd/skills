@@ -1,0 +1,16 @@
+{
+  "name": "hebtcd",
+  "owner": {
+    "name": "HeBtcd",
+    "url": "https://github.com/HeBtcd"
+  },
+  "description": "Reusable methods for coding agents, indexed by the moment you reach for them.",
+  "plugins": [
+    {
+      "name": "skills",
+      "source": "./",
+      "description": "Agent skills indexed by moment of need: infer intent, check assumptions, match conventions, design for failure, write for the audience, verify before shipping.",
+      "category": "engineering"
+    }
+  ]
+}

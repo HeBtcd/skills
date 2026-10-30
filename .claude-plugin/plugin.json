@@ -1,0 +1,35 @@
+{
+  "name": "skills",
+  "version": "0.1.0",
+  "description": "Agent skills indexed by moment of need: infer intent, check assumptions, match conventions, design for failure, write for the audience, verify before shipping.",
+  "author": {
+    "name": "HeBtcd",
+    "url": "https://github.com/HeBtcd"
+  },
+  "repository": "https://github.com/HeBtcd/skills",
+  "license": "MIT",
+  "skills": [
+    "./skills/be-more-ambitious",
+    "./skills/deep-research",
+    "./skills/for-the-audience",
+    "./skills/functional-programming",
+    "./skills/give-me-options",
+    "./skills/is-this-a-thing",
+    "./skills/let-it-crash",
+    "./skills/managing-up",
+    "./skills/open-from-day-one",
+    "./skills/performance-engineering",
+    "./skills/plain-language",
+    "./skills/play-it-back",
+    "./skills/prove-it-wrong",
+    "./skills/read-between-the-lines",
+    "./skills/review-the-pr",
+    "./skills/show-your-math",
+    "./skills/hebtcd-skill-creator",
+    "./skills/slim",
+    "./skills/straight-answer",
+    "./skills/what-are-we-assuming",
+    "./skills/when-in-rome",
+    "./skills/write-the-docs"
+  ]
+}
