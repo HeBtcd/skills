@@ -1,12 +1,12 @@
 ---
 name: functional-programming
 disable-model-invocation: true
-description: "Functional design: model the domain in types, keep state essential, parse at the boundary, push side effects to the edges, refactor by substitution, and write laws as properties. Use when modeling a domain, untangling state and branching, deciding where side effects live, or refactoring toward correctness."
+description: "Functional design: model the domain in types, keep state essential, parse at the boundary, push side effects to the edges, refactor by substitution, write laws as properties, and convict idioms that hurt by design. Use when modeling a domain, untangling state and branching, deciding where side effects live, refactoring toward correctness, or judging whether an FP idiom earns its ceremony."
 ---
 
 # Functional Programming
 
-Six moments, in the order the work meets them.
+Seven moments, in the order the work meets them.
 
 ## 1. Model: which states can exist?
 
@@ -112,3 +112,21 @@ Koen Claessen and John Hughes, [QuickCheck: A Lightweight Tool for Random Testin
 > [...] they make it easy to repeat tests after each modification to a program. [...] If the law fails, then quickCheck reports the counterexample.
 
 Write each law the function must satisfy as a property beside it; generated cases hunt the counterexample.
+
+## 7. Convict: which idioms hurt by design?
+
+The six moments above are also the suspects: each tool has a variant that keeps the ceremony and drops the cargo, and the communities that built them keep handing down verdicts.
+
+Bodigrim, [CLC proposal 167: Add foldl' to Prelude](https://github.com/haskell/core-libraries-committee/issues/167) (approved, shipped in base-4.20):
+
+> Currently `Prelude` exports `foldl` (which is an anti-pattern most of the time, especially for lists), but does not export `foldl'`. This is silly and harmful, especially for newcomers, who easily fall into the trap and get space leaks even in the simplest programs.
+
+Tobias Nipkow, [Programming and Proving in Isabelle/HOL](https://isabelle.in.tum.de/website-Isabelle2024/dist/library/Doc/Prog_Prove/Isar.html), on the tactic scripts Isar was written to replace:
+
+> Apply-scripts are unreadable and hard to maintain. The language of choice for larger proofs is Isar.
+
+Scala 3 book, [Contextual Abstractions](https://docs.scala-lang.org/scala3/book/ca-contextual-abstractions-intro.html), on the redesign of implicits:
+
+> The design of Scala 3 focuses on **intent** rather than **mechanism**. [...] It makes implicits easier to learn and harder to abuse.
+
+Judge an idiom by what its working design costs, not by its worst use: convict the smallest variant that carries the harm, acquit the parent, and name the scope. The register of convictions lives in [slop.md](slop.md).
