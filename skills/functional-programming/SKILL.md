@@ -75,7 +75,7 @@ Gary Bernhardt's "Functional Core, Imperative Shell": [Boundaries](https://www.d
 
 > the expired users class makes all the decisions and the sweeper class has all the dependencies [...] the functional core is heavy on paths heavy on decisions light on dependencies which is exactly what unit testing is good at [...] and exactly the same thing is true for the shell lots of dependencies few paths is exactly what an integration test is good at it
 
-Mark Seemann, [Functional architecture is Ports and Adapters](https://blog.ploeh.dk/2016/03/18/functional-architecture-is-ports-and-adapters/):
+Mark Seemann, [Functional architecture is Ports and Adapters](https://web.archive.org/web/2024/https://blog.ploeh.dk/2016/03/18/functional-architecture-is-ports-and-adapters/):
 
 > In Haskell programming, you should strive towards maximising the amount of pure functions you write, pushing the impure code to the edges of the system. A good Haskell program has a big core of pure functions, and a shell of `IO` code.
 

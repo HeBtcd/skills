@@ -12,9 +12,9 @@ The standard: an idiom is guilty when working as designed already hurts, when th
 | --- | --- | --- |
 | Transformer stacks of three or more concrete layers as application architecture | the nesting order is a semantics the signature never states, plus quadratic lift plumbing; the community retreated twice, mtl to effect systems to explicit handles | [Extensible Effects](https://okmij.org/ftp/Haskell/extensible/exteff.pdf); Snoyman, [The ReaderT Design Pattern](https://www.fpcomplete.com/blog/readert-design-pattern/) |
 | Free monad and tagless-final as the default effect discipline | an AST plus an interpreter to rediscover the function call; freer measured about thirty times slower than mtl | [freer monads](https://reasonablypolymorphic.com/blog/freer-monads/); De Goes, [The Death of Tagless Final](https://degoes.net/articles/tagless-horror) |
-| Eager effect types as the pure primitive (Scala `Future`) | eagerness plus memoization is in the definition; binding the value changes its meaning | cats-effect documentation contrasts it with `IO` |
+| Eager effect types as the pure primitive (Scala `Future`) | eagerness plus memoization is in the definition; binding the value changes its meaning | [cats-effect documentation](https://typelevel.org/cats-effect/docs/datatypes/io) contrasts it with `IO` |
 | Capability constraint soup (`Has*` environment signatures) | parametricity theatre over an environment that is constant | |
-| Cake pattern self-type wiring | an is-a dependency with initialization-order landmines; mass teardowns on record | the "cake pattern is a lie" postmortems |
+| Cake pattern self-type wiring | an is-a dependency with initialization-order landmines; mass teardowns on record | the [cake pattern is a lie](https://mikulskibartosz.name/the-cake-pattern-is-a-lie) postmortems |
 | Purity by interpreter | an operation ADT plus its interpreter with identical behavior: the same code written twice so it may be called pure | |
 
 ### Implicit machinery
@@ -22,11 +22,11 @@ The standard: an idiom is guilty when working as designed already hurts, when th
 | Idiom | Working as designed costs | On record |
 | --- | --- | --- |
 | Implicit conversions | the compiler rewrites a value's type at a call site nothing marks | confined behind a language flag: [Scala 3 changed features](https://docs.scala-lang.org/scala3/reference/changed-features/implicit-conversions.html) |
-| Implicit resolution as control flow or API surface | a call's behavior is decided by what was in scope at the import site; the designer's own keynote enumerated the errors | "Some Mistakes We Made When Designing Implicits", Typelevel Summit 2019; [Contextual Abstractions](https://docs.scala-lang.org/scala3/book/ca-contextual-abstractions-intro.html) |
+| Implicit resolution as control flow or API surface | a call's behavior is decided by what was in scope at the import site; the designer's own keynote enumerated the errors | [Some Mistakes We Made When Designing Implicits](https://typelevel.org/event/2019-06-summit-lausanne/), Typelevel Summit 2019; [Contextual Abstractions](https://docs.scala-lang.org/scala3/book/ca-contextual-abstractions-intro.html) |
 | Orphan instances | coherence's global uniqueness breaks quietly: a `Set` built under one `Ord` reads wrong under another | ezyang, [Type classes: confluence, coherence, global uniqueness](https://blog.ezyang.com/2014/07/type-classes-confluence-coherence-global-uniqueness/) |
-| Whitebox-macro auto-derivation | instance structure recomputed per call site; coproduct derivation measured quadratic | Scala compiler-team analyses of macro-heavy derivation; shapeless's author joined dotty to make it redundant |
-| Type-level programming exposed as API (singletons, HList, sized vectors) | users pay the proof tax and still hit the runtime check underneath; singletons measured up to 48 percent of a benchmark | Dependently Typed Haskell in Industry (experience report) |
-| HKT simulation encodings (`Kind` URIs, defunctionalization, witness types) | the language lacks the abstraction, so the encoding reproduces it badly: inference collapses, errors unreadable | Effect-TS issue 1005 dropped the URI registry; fp-ts rewritten |
+| Whitebox-macro auto-derivation | instance structure recomputed per call site; coproduct derivation measured quadratic | [Scala 3 type class derivation](https://docs.scala-lang.org/scala3/reference/contextual/derivation.html) retired macro-heavy derivation; shapeless's author joined dotty to make it redundant |
+| Type-level programming exposed as API (singletons, HList, sized vectors) | users pay the proof tax and still hit the runtime check underneath; singletons measured up to 48 percent of a benchmark | [Dependently Typed Haskell in Industry](https://davidchristiansen.dk/pubs/dependent-haskell-experience-report.pdf) (experience report) |
+| HKT simulation encodings (`Kind` URIs, defunctionalization, witness types) | the language lacks the abstraction, so the encoding reproduces it badly: inference collapses, errors unreadable | [Effect-TS issue 1005](https://github.com/Effect-TS/effect/issues/1005) dropped the URI registry; fp-ts rewritten |
 | Profunctor or van Laarhoven optics as the exposed API | a missing field reports `Could not deduce (Bicontravariant p)` | [well-typed/optics](https://github.com/well-typed/optics) exists to escape those errors |
 
 ### Evaluation defaults
@@ -34,11 +34,11 @@ The standard: an idiom is guilty when working as designed already hurts, when th
 | Idiom | Working as designed costs | On record |
 | --- | --- | --- |
 | Laziness by default | thunk accumulation is the default space behavior, and even experienced programmers cannot predict it | every strict descendant refused it: [PureScript, Differences from Haskell](https://github.com/purescript/documentation/blob/master/language/Differences-from-Haskell.md); Lean 4, Idris, F#, OCaml, Elm |
-| Lazy I/O | handle lifetime bound to demand and GC order; a closed handle yields empty output silently | the conduit, pipes and streamly ecosystems exist to replace it |
+| Lazy I/O | handle lifetime bound to demand and GC order; a closed handle yields empty output silently | the [conduit](https://github.com/snoyberg/conduit), pipes and streamly ecosystems exist to replace it |
 | `foldl`, the lazy left fold | correct usage, correct types, correct result, and a stack of thunks | its own committee calls it an anti-pattern: [CLC 167](https://github.com/haskell/core-libraries-committee/issues/167) |
 | Partial functions on the default surface (`head`, `!!`, `fromJust`) | blessed imports that crash on legal input | `x-partial` warnings in [Data.List](https://hackage.haskell.org/package/base/docs/Data-List.html) |
-| `Foldable` instances on degenerate containers | `length (1,2)` returns 1 and `maximum (99,0)` returns 0: type-correct nonsense | the Foldable Wats thread on the libraries list |
-| MonadPlus and Alternative law ambiguity | the specification publishes two mutually exclusive law sets and agrees on neither | the MonadPlus reform proposals |
+| `Foldable` instances on degenerate containers | `length (1,2)` returns 1 and `maximum (99,0)` returns 0: type-correct nonsense | the [Foldable Wats thread](https://mail.haskell.org/pipermail/libraries/2016-February/026694.html) on the libraries list |
+| MonadPlus and Alternative law ambiguity | the specification publishes two mutually exclusive law sets and agrees on neither | the [MonadPlus reform proposal](https://wiki.haskell.org/MonadPlus_reform_proposal) |
 
 ### Style and ritual
 
@@ -46,7 +46,7 @@ The standard: an idiom is guilty when working as designed already hurts, when th
 | --- | --- | --- |
 | Tacit golf beyond a single composition | the arguments vanish and the diff becomes decryption | "pointless" is the community's own name: [Tacit programming](https://en.wikipedia.org/wiki/Tacit_programming) |
 | Auto-curry plus placeholder combinator libraries | every call site pays the reorder tax, and `flip` exists to confess the parameter order was wrong | Elm 0.19 removed `curry`, `flip` and custom operators: [upgrade instructions](https://github.com/elm/compiler/blob/master/docs/upgrade-instructions/0.19.0.md) |
-| Arrows as application plumbing | several classes and a dozen methods to compose what Applicative already composes | Netwire's author abandoned arrows and Reflex was born; Mokhov, Selective Applicative Functors (ICFP 2019) |
+| Arrows as application plumbing | several classes and a dozen methods to compose what Applicative already composes | Netwire's author abandoned arrows and Reflex was born; Mokhov, [Selective Applicative Functors](https://www.staff.ncl.ac.uk/andrey.mokhov/selective-functors.pdf) (ICFP 2019) |
 | Recursion-scheme zoos as the default AST representation | two declarations per tree so a `cata` can fold it; zygohistomorphic prepromorphism is a real exported name | [github/semantic retrospective](https://github.com/github/semantic/issues/662) |
 | Comonads as application architecture | `extend` and `duplicate` gymnastics to say "a structure with a focus" | |
 | Church encoding as storage representation, CPS as API | values become functions: no case analysis, no sharing, no inspector view | the callback-hell to async-await migration, ecosystem scale |
@@ -57,7 +57,7 @@ The standard: an idiom is guilty when working as designed already hurts, when th
 | No-loop dogma on platforms without tail calls | a lawful mutual recursion overflows on legal input sizes; the trampoline workaround charges an allocation per step | |
 | Option transplanted wholesale into nullable languages | a second null appears (`Some(null)`, uninitialized Option fields) while the first stays open | |
 | Prelude-transplant libraries (LanguageExt, fp-ts into imperative hosts) | the design goal is paradigm replacement; every contributor learns two vocabularies | |
-| OCaml functors and `include` as default composition | the heaviest syntactic tool made the default; packed modules copied wholesale until module aliases were invented | Jane Street's packed-modules postmortem |
+| OCaml functors and `include` as default composition | the heaviest syntactic tool made the default; packed modules copied wholesale until module aliases were invented | Jane Street's [packed-modules postmortem](https://blog.janestreet.com/a-lighter-core/) |
 
 ## Context-bound convictions
 
