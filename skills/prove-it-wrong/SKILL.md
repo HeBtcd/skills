@@ -1,60 +1,68 @@
 ---
 name: prove-it-wrong
 disable-model-invocation: true
-description: "Falsify your own conclusion before accepting it. Use when supporting reasons have piled up, when a self-built diagnosis or fix 'should work', or when everything seems to confirm: what would make it break?"
+description: "Falsify a self-built diagnosis or plan whose confirmations keep piling up: find what would make it break, then make the attempt. Use when supporting reasons abound, it should work, and every check seems to confirm."
 ---
 
 # Prove It Wrong
 
-A claim earns trust by surviving the attack meant to break it. Six moments, in the order the work meets them.
+A falsification pass in six moments, in the order the work meets them.
 
-## 1. Enumeration: is the pile confirmations only?
+## 1. Corroboration
 
-Peter Wason's experiment, [On the failure to eliminate hypotheses in a conceptual task](https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask) (1960):
+Sort the pile: for each supporting reason, name the outcome that would have counted against it.
 
-> Inferences from confirming evidence (Bacon's "induction by simple enumeration") can obviously lead to wrong conclusions because different hypotheses may be compatible with the same data. In their crudest form such inferences are apparent in the selection of facts to justify prejudices. In research merely confirming evidence is clearly of limited value.
+Karl Popper, [Science as Falsification](https://tildesites.bowdoin.edu/~j.knockel/falsification/), from Conjectures and Refutations (1963):
 
-> [...] the reinforcement of these subjects' rules by their confirming instances blocked the notion that there might be any alternative.
+> It is easy to obtain confirmations, or verifications, for nearly every theory — if we look for confirmations.
 
-Chamberlin's mechanism for the pile, [The Method of Multiple Working Hypotheses](https://archive.org/details/jstor-1764336) (1890):
+> Confirmations should count only if they are the result of risky predictions; that is to say, if, unenlightened by the theory in question, we should have expected an event which was incompatible with the theory — an event which would have refuted the theory.
 
-> There is an unconscious selection and magnifying of phenomena that fall into harmony with the theory and support it, and an unconscious neglect of those that fail of coincidence. [...] From an unduly favored child, it readily becomes master, and leads its author whithersoever it will.
+> Every genuine test of a theory is an attempt to falsify it, or to refute it. Testability is falsifiability; but there are degrees of testability: some theories are more testable, more exposed to refutation, than others; they take, as it were, greater risks.
 
-Feynman, [Cargo Cult Science](https://calteches.library.caltech.edu/51/2/CargoCult.htm) (1974):
+> Confirming evidence should not count except when it is the result of a genuine test of the theory; and this means that it can be presented as a serious but unsuccessful attempt to falsify the theory. (I now speak in such cases of "corroborating evidence.")
 
-> The first principle is that you must not fool yourself—and you are the easiest person to fool. So you have to be very careful about that.
+## 2. The easiest person to fool
 
-## 2. Rivals: which explanations must lose for yours to win?
+Write down, unprompted, the details that could throw doubt on your own construction.
 
-Chamberlin's remedy, [The Method of Multiple Working Hypotheses](https://archive.org/details/jstor-1764336):
+Richard Feynman, [Cargo Cult Science](http://calteches.library.caltech.edu/51/2/CargoCult.htm), Caltech commencement address (1974):
 
-> The effort is to bring up into view every rational explanation of new phenomena, and to develop every tenable hypothesis respecting their cause and history. The investigator thus becomes the parent of a family of hypotheses; and, by his parental relation to all, he is forbidden to fasten his affections unduly upon any one.
+> The first principle is that you must not fool yourself—and you are the easiest person to fool.
 
-> [...] knowing well that some of his intellectual children will die before maturity, yet feeling that several of them may survive [...]
+> For example, if you’re doing an experiment, you should report everything that you think might make it invalid—not only what you think is right about it: other causes that could possibly explain your results; and things you thought of that you’ve eliminated by some other experiment, and how they worked—to make sure the other fellow can tell they have been eliminated.
 
-## 3. Prohibition: what does the claim forbid?
+> Details that could throw doubt on your interpretation must be given, if you know them. You must do the best you can—if you know anything at all wrong, or possibly wrong—to explain it.
 
-Karl Popper's criterion, [Science as Falsification](https://tildesites.bowdoin.edu/~j.knockel/falsification/) (1963):
+## 3. The dragon in my garage
 
-> A theory which is not refutable by any conceivable event is non-scientific. Irrefutability is not a virtue of a theory (as people often think) but a vice.
+Name the observation or experiment that would count against the claim.
 
-> Every "good" scientific theory is a prohibition: it forbids certain things to happen. The more a theory forbids, the better it is.
+Carl Sagan, [The Dragon in My Garage](https://hermiene.net/literature/essays/dragon-in-my-garage), The Demon-Haunted World (1995):
 
-> [...] criteria of refutation have to be laid down beforehand; it must be agreed which observable situations, if actually observed, mean that the theory is refuted.
+> And so on. I counter every physical test you propose with a special explanation of why it won’t work.
 
-## 4. Premortem: it has already failed; write down why
+> Now, what’s the difference between an invisible, incorporeal, floating dragon who spits heatless fire and no dragon at all? If there’s no way to disprove my contention, no conceivable experiment that would count against it, what does it mean to say that my dragon exists? Your inability to invalidate my hypothesis is not at all the same thing as proving it true. Claims that cannot be tested, assertions immune to disproof are veridically worthless, whatever value they may have in inspiring us or in exciting our sense of wonder.
 
-Gary Klein, [Performing a Project Premortem](https://hbr.org/2007/09/performing-a-project-premortem), Harvard Business Review (2007):
+## 4. The pre-mortem
 
-> Unlike a typical critiquing session, in which project team members are asked what might go wrong, the premortem operates on the assumption that the "patient" has died, and so asks what did go wrong. The team members' task is to generate plausible reasons for the project's failure.
+Assume it has already failed, and write down the reasons why.
 
-> The leader starts the exercise by informing everyone that the project has failed spectacularly. Over the next few minutes those in the room independently write down every reason they can think of for the failure—especially the kinds of things they ordinarily wouldn't mention as potential problems, for fear of being impolitic.
+Gary Klein, [The Pre-Mortem Method](https://www.psychologytoday.com/us/blog/seeing-what-others-dont/202101/the-pre-mortem-method), Psychology Today (2021):
 
-> It also reduces the kind of damn-the-torpedoes attitude often assumed by people who are overinvested in a project.
+> You pretend you are looking into an imaginary, infallible crystal ball and—oh no! The plan you’ve just discussed has turned out to be a failure. A fiasco. That much is certain.
 
-## 5. Exclusion: which check decides?
+> Next, you ask each team member to take two minutes to write down the reasons why the plan failed. [...] At the end, you have a list of showstoppers.
 
-John R. Platt, [Strong Inference](https://www.whoi.edu/cms/files/platt64sci_72743.pdf), Science (1964):
+The mistake he flags:
+
+> Asking the non-challenging question, “What can go wrong?” instead of using the crystal ball to affirm that the plan has been a disaster.
+
+## 5. Strong inference
+
+Set the rival explanations side by side, build the experiment whose outcomes exclude some of them, and run it to a clean result.
+
+John R. Platt, [Strong Inference](https://www.whoi.edu/cms/files/platt64sci_72743.pdf), Science 146 (1964):
 
 > Strong inference consists of applying the following steps to every problem in science, formally and explicitly and regularly:
 >
@@ -65,24 +73,12 @@ John R. Platt, [Strong Inference](https://www.whoi.edu/cms/files/platt64sci_7274
 
 > Any conclusion that is not an exclusion is insecure and must be rechecked.
 
-> How many of us write down our alternatives and crucial experiments every day, focusing on the exclusion of a hypothesis? We may write our scientific papers so that it looks as if we had steps 1, 2, and 3 in mind all along. But in between, we do busywork.
+> It is our old friend the Baconian “exclusion,” but I call it “The Question.” Obviously it should be applied as much to one’s own thinking as to others’. It consists of asking in your own mind, on hearing any scientific explanation or theory put forward, “But sir, what experiment could disprove your hypothesis?”; or, on hearing a scientific experiment described, “But sir, what hypothesis does your experiment disprove?”
 
-Wason, [On the failure to eliminate hypotheses in a conceptual task](https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask), on how a rule dies:
+## 6. Presence, not absence
 
-> All that the subject had to do is to generate an instance which is similar to previous positive ones, but does not conform to the tested rule. If the outcome is positive, the rule can be decisively eliminated.
+Report the result as the list of break attempts the construction survived.
 
-## 6. Corroboration: what did it survive?
+Edsger Dijkstra, [The Humble Programmer](https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html), ACM Turing Lecture (1972):
 
-Popper, [Science as Falsification](https://tildesites.bowdoin.edu/~j.knockel/falsification/):
-
-> Confirming evidence should not count except when it is the result of a genuine test of the theory; and this means that it can be presented as a serious but unsuccessful attempt to falsify the theory. (I now speak in such cases of "corroborating evidence.")
-
-Feynman, [Cargo Cult Science](https://calteches.library.caltech.edu/51/2/CargoCult.htm):
-
-> Details that could throw doubt on your interpretation must be given, if you know them.
-
-> [...] try to give all of the information to help others to judge the value of your contribution; not just the information that leads to judgment in one particular direction or another.
-
-Wason, [On the failure to eliminate hypotheses in a conceptual task](https://archive.org/details/FailureToEliminateHypothesisInAConceptualTask):
-
-> In real life there is no authority to pronounce judgement on inferences: the inferences can only be checked against the evidence.
+> Today a usual technique is to make a program and then to test it. But: program testing can be a very effective way to show the presence of bugs, but is hopelessly inadequate for showing their absence.

@@ -1,133 +1,103 @@
 ---
 name: managing-up
 disable-model-invocation: true
-description: "Report finished work or escalate a decision to a delegator who did not follow the work. Use when reporting back, requesting a decision, or answering a review."
+description: "Report finished work or escalate a decision to a delegator who did not follow it. Use for status reports, delivered work, approval requests, and decision asks addressed to a boss, client, or stakeholder who lacks the context to judge them."
 ---
 
 # Managing Up
 
-Gabarro and Kotter, [Managing Your Boss](https://hbr.org/2005/01/managing-your-boss):
+The report is the work as the delegator will ever see it. Five moments, in the order the message meets them.
 
-> We are using the term to mean the process of consciously working with your superior to obtain the best possible results for you, your boss, and the company.
+## Managing your boss
 
-Eight moments, in the order the work meets them.
+Gabarro and Kotter, [Managing Your Boss](https://coachingpartners.co.nz/wp-content/uploads/Managing-Your-Boss.pdf) (Harvard Business Review, Best of 1980):
 
-## 1. Read: who is the delegator, and how do they take in work?
+> it is not uncommon for a boss to need more information than the subordinate would naturally supply or for the subordinate to think the boss knows more than he or she really does. Effective managers recognize that they probably underestimate what their bosses need to know and make sure they find ways to keep them informed through processes that fit their styles.
 
-Peter Drucker, [Managing Oneself](https://www.mlaacademy.org/en/menu/post-managing-oneself-3-en/):
+> Ultimately, the burden falls on the subordinate to find out what the boss's expectations are.
 
-> It is simply the duty of the subordinate to enable the boss to do his or her work. And that requires looking at the boss and asking [...] "What are his or her strengths? How does he or she do the work and perform? What are his or her values?" In fact, this is the secret of "managing" the boss.
+> Some bosses prefer to be involved in decisions and problems as they arise. [...] A boss who has a need to be involved will become involved one way or another, so there are advantages to including him or her at your initiative. Other bosses prefer to delegate—they don't want to be involved. They expect you to come to them with major problems and inform them about any important changes.
 
-> Bosses are not a title on the organization chart or a "function." They are individuals and entitled to do the work the way they do it. And it is incumbent on the people who work with them to observe them, to find out how they work and to adapt themselves to the way the bosses are effective.
+> Peter Drucker divides bosses into "listeners" and "readers." Some bosses like to get information in report form so they can read and study it. Others work better with information and reports presented in person so they can ask questions. [...] If your boss is a listener, you brief him or her in person, then follow it up with a memo. If your boss is a reader, you cover important items or proposals in a memo or report, then discuss them.
 
-> As said before, readers are unlikely ever to become listeners, and listeners are unlikely ever to become readers. But everyone can learn to make a decent oral presentation or to write a decent report.
+> Your boss is probably as limited in his or her store of time, energy, and influence as you are. Every request you make of your boss uses up some of these resources, so it's wise to draw on these resources selectively.
 
-> Then it is incumbent on the people who do these things to make sure that the marketing vice-president understands what they are trying to do, why they are trying to do it, how they are going to do it and what results to expect.
+> a superior needs to hear about failures as well as successes. [...] Others see to it that potential problems, whether in the form of good surprises or bad news, are communicated immediately.
 
-> If the marketing vice-president does not understand what these high-grade knowledge specialists are doing, it is primarily their fault, and not that of the marketing vice-president. They have not told her. They have not educated her.
+Task: find out what this delegator expects to hear and how they take information, then send the message in that form at the depth they keep, failures included, early enough to matter.
 
-Before composing, look at the delegator: their strengths, their way of performing, their values, reader or listener. What they need told is whatever lets them do their work; a delegator who does not understand the work was not told.
+## Bottom line up front
 
-## 2. Ground: does the report start where the reader stands?
+Wikipedia, [BLUF (communication)](https://en.wikipedia.org/wiki/BLUF_(communication)):
 
-Barbara Minto, [The Minto Pyramid Principle](https://manager138.com/resources/minto_pyramid_principle/ch3_build_a_pyramid.html):
+> Bottom Line Up Front, or BLUF, is the practice of beginning a message with its key information (the "bottom line").
 
-> Always put historical chronology in the introduction. You cannot tell the reader "what happened" in the body of the document [...]
+> BLUF aims to enable the receiver of a message to make faster decisions, especially for people who are busy, time-constrained, or overloaded with lots of information.
 
-> [...] make the first noncontroversial statement about it you can make. What is the first thing you can say about it to the reader that you know he will agree is true – either because he knows it, or because it is historically true and easily checked?
+> BLUF communications place the main point of a message at the beginning and then follow it up with the context. [...] It is followed by essential background information that summarizes or enumerates the considerations (events or prior decisions) that led to the bottom line.
 
-Minto, [Introductions](https://manager138.com/resources/minto_pyramid_principle/ch4_introductions.html):
+Its worked example:
 
-> At the time of the initial introduction, you want to remind him what he knows about the subject of the paper [...]
+> BLUF: I need you to approve both the design and content of the attached flyer by noon on August 10.
 
-> Be careful not to include in the introduction anything that the reader does *not* know. [...] do not include in the pyramid structure any information that the reader *does* know.
+Army Regulation 25-50, quoted there:
 
-> [...] if your entire thinking is not clear to the reader in the first 30 seconds of reading, you should rewrite.
+> Army writing will be concise, organized, and to the point. Two essential requirements include putting the main point at the beginning of the correspondence (bottom line up front) and using the active voice [...]
 
-Build the opening out of what the delegator already knows or will agree is true (the task as they gave it, then what happened), put the answer at the top of the pyramid, and rewrite until the whole report clears in the first thirty seconds.
+Task: make the first sentence carry the result delivered or the decision needed, with the date it is needed, and let everything after it be context.
 
-## 3. Wine: how old is this news allowed to get?
+## SCQA
 
-Colin Powell, as quoted at [AZ Quotes](https://www.azquotes.com/quote/235179):
+[SCQA](https://usefulconsultingframeworks.com/frameworks/scqa/), Barbara Minto's structure for the opening of a document:
 
-> Bad news isn't wine. It doesn't improve with age.
+> SCQA is a structure for the opening of a document or presentation. It states a situation the reader already accepts, a complication that disturbs it, the question the complication raises, and then the answer.
 
-Powell, via Oren Harari, [A Leadership Primer](https://govleaders.org/powell.htm):
+> It supports one choice: what goes in the first lines, so the reader sees why the document exists and gets the recommendation without waiting.
 
-> "The day soldiers stop bringing you their problems is the day you have stopped leading them. They have either lost confidence that you can help them or concluded that you do not care. Either case is a failure of leadership."
+The four parts, in the order the reader meets them:
 
-A report carrying a problem goes out now, in whatever shape it is; the delegator learns the snag from you today, not from a cleaner report later. Their side of the contract is staying reachable; yours is bringing it.
+> A few sentences of context the reader already accepts, anchored in time and place. It contains nothing new. The test is whether the reader would nod.
 
-## 4. Door: does this decision swing back?
+> The change that disturbed the situation and created the need to act. [...] It should be specific and evidenced, and it can often begin with however.
 
-Jeff Bezos, 2015 Letter to Shareholders, quoted in [Org Hacking](https://orghacking.com/jeff-bezos-on-decision-making-1d1637bdb859):
+> The question the complication raises in the reader's mind. It is usually implied in the final document, but write it down while drafting. It has to be the reader's question and not the writer's preferred one.
 
-> Some decisions are consequential and irreversible or nearly irreversible — one-way doors — and these decisions must be made methodically, carefully, slowly, with great deliberation and consultation. If you walk through and don't like what you see on the other side, you can't get back to where you were before. We can call these Type 1 decisions. But most decisions aren't like that — they are changeable, reversible — they're two-way doors. If you've made a suboptimal Type 2 decision, you don't have to live with the consequences for that long. You can reopen the door and go back through. Type 2 decisions can and should be made quickly by high judgment individuals or small groups.
+> The document's main message, stated first as a claim someone could disagree with. Everything beneath it in the pyramid supports it.
 
-> [...] Any companies that habitually use the light-weight Type 2 decision-making process to make Type 1 decisions go extinct before they get large.
+The same reference keeps the routine update light:
 
-Classify the door before writing a word: reversible calls are yours to make quickly and to report; irreversible calls are the delegator's, and they travel up slowly, with deliberation and consultation.
+> The update is short and routine. A single sentence will do.
 
-## 5. Intent: which of your calls do they get to veto?
+Task: rebuild the frame in three moves: the delegation they would nod at, the change that disturbed it, the question now open, and keep it to a few sentences.
 
-David Marquet, [Turn the Ship Around!](https://davidmarquet.wordpress.com/2014/10/07/a-submarine-captain-on-the-power-of-leadership-language-fast-company/):
+## Completed staff work
 
-> Use "I intend to . . ." to turn passive followers into active leaders.
+Brigadier General George A. Rehm's office memo for MacArthur's headquarters in World War II, [The Doctrine of Completed Staff Work](https://coupdetodd.wordpress.com/2009/09/28/the-doctrine-of-completed-staff-work/):
 
-> [...] "I intend to . . ." profoundly shifted ownership of the plan to the officers.
+> "Completed staff work" is the study of a problem, and presentation of a solution, by a staff member, in such form that all that remains to be done on the part of the commander is to indicate approval or disapproval of the completed action.
 
-> Here is a short list of "disempowered phrases" that passive followers use:
->
-> - Request permission to . . .
-> - I would like to . . .
-> - What should I do about . . .
-> - Do you think we should . . .
-> - Could we . . .
->
-> Here is a short list of "empowered phrases" that active doers use:
->
-> - I intend to . . .
-> - I plan on . . .
-> - I will . . .
-> - We will . . .
+> It is your duty as a staff member to work out the details. You should not consult your commander in the determination of those details, no matter how perplexing they may be.
 
-> "Captain, I intend to submerge the ship. We are in water we own, water depth has been checked and is 400 feet, all men are below, the ship is rigged for dive, and I've certified my watch team." I'd reply "Very well" and off we'd go.
+> The impulse, which often comes to the inexperienced staff member, to ask the commander what to do, recurs more often when the problem is difficult. [...] Resist that impulse.
 
-A call that is yours still goes up as intent, not permission: "I intend to" plus the checks already run, so the delegator can answer "very well" instead of waiting on you to ask.
+> Do not worry your commander with long explanations and memos. Writing a memo to your commander does not constitute completed staff work. But writing a memo for your commander to send to someone else does. Your views should be placed before the commander in finished form so that the commander can make them his or her views simply by signing the document.
 
-## 6. Signature: could the delegator decide by signing?
+> In most instances, completed staff work results in a single document prepared for the signature of the commander without accompanying comment. If the proper result is reached, the commander will usually recognize it at once. If the commander wants comment or explanation, he will ask for it.
 
-Colonel Archer J. Lerch for the Provost Marshal General, U.S. Army, 1942, [Completed Staff Work](https://govleaders.org/completed-staff-work.htm):
+> If you were the commander would you be willing to sign the paper you have prepared, and stake your professional reputation on its being right? If the answer is no, take it back and work it over, because it is not yet "completed staff work."
 
-> "Completed Staff Work" is the study of a problem, and presentation of a solution, by a staff officer, in such form that all that remains to be done on the part of the head of the staff division, or the commander, is to indicate his approval or disapproval of the completed action.
+Task: present the finished form: the alternatives weighed, the recommendation stated, and every detail the signature needs inside the document.
 
-> It is your job to advise your chief what he ought to do, not to ask him what you ought to do. He needs answers, not questions. Your job is to study, write, restudy and rewrite until you have evolved a single proposed action – the best one of all you have considered. Your chief merely approves or disapproves.
+## One-way doors, two-way doors
 
-> Your views should be placed before him in finished form so that he can make them his views by simply signing his name.
+Jeff Bezos, [2015 Letter to Shareholders](https://s2.q4cdn.com/299287126/files/doc_financials/annual/2015-Letter-to-Shareholders.PDF), Amazon:
 
-The 1943 First Canadian Army version, [Completed Staff Work](https://regimentalrogue.com/srsub/1943_completed_staff_work.htm):
+> Some decisions are consequential and irreversible or nearly irreversible – one-way doors – and these decisions must be made methodically, carefully, slowly, with great deliberation and consultation. If you walk through and don't like what you see on the other side, you can't get back to where you were before. We can call these Type 1 decisions. But most decisions aren't like that – they are changeable, reversible – they're two-way doors. [...] Type 2 decisions can and should be made quickly by high judgment individuals or small groups.
 
-> When you have finished your "completed staff work" the final test is that: If you were the chief would you be willing to sign the paper you have prepared, and stake your professional reputation on it being right? If the answer is in the negative, take it back and work it over because it is not yet "completed staff work."
+> As organizations get larger, there seems to be a tendency to use the heavy-weight Type 1 decision-making process on most decisions, including many Type 2 decisions. The end result of this is slowness, unthoughtful risk aversion, failure to experiment sufficiently, and consequently diminished invention.
 
-An escalated decision arrives finished: the problem studied to a single proposed action, written so the delegator's whole part is approve or disapprove. If the request still carries a question you could have answered, take it back and work it over.
+The letter's footnote marks the opposite error:
 
-## 7. Re-express: what happens before a word of rebuttal?
+> Any companies that habitually use the light-weight Type 2 decision-making process to make Type 1 decisions go extinct before they get large.
 
-Daniel Dennett, [Intuition Pumps and Other Tools for Thinking](https://www.themarginalian.org/2014/03/28/daniel-dennett-rapoport-rules-criticism/), on Anatol Rapoport's rules:
-
-> How to compose a successful critical commentary:
->
-> 1. You should attempt to re-express your target's position so clearly, vividly, and fairly that your target says, "Thanks, I wish I'd thought of putting it that way."
-> 2. You should list any points of agreement (especially if they are not matters of general or widespread agreement).
-> 3. You should mention anything you have learned from your target.
-> 4. Only then are you permitted to say so much as a word of rebuttal or criticism.
-
-Answer a review in that order: the critique re-expressed until the reviewer recognizes it, the points of agreement, what their reading taught you, then the rebuttal, if any remains.
-
-## 8. Commit: whose side are you on after the ruling?
-
-Amazon, [Leadership Principles](https://www.amazon.jobs/content/en/our-workplace/leadership-principles), "Have Backbone; Disagree and Commit":
-
-> Leaders are obligated to respectfully challenge decisions when they disagree, even when doing so is uncomfortable or exhausting. Leaders have conviction and are tenacious. They do not compromise for the sake of social cohesion. Once a decision is determined, they commit wholly.
-
-Challenge the decision while it is open, once and at full strength; once determined, execute it as your own.
+Task: tag every escalated ask with its door type and the date it is needed, so the delegator knows whether to deliberate or to decide now.

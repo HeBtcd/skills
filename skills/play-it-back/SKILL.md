@@ -1,77 +1,59 @@
 ---
 name: play-it-back
 disable-model-invocation: true
-description: "Play back the user's goal and the problem behind it so they can confirm or correct it before you act. Use when a request is ambiguous, when the literal ask may not be the real goal, or when a message is short, vague, or corrective."
+description: "Play back the real goal before acting on the literal ask. Use when a user's message is short or vague, when the user corrects your last attempt, or when a request names a solution instead of the problem it solves."
 ---
 
 # Play It Back
 
-A restatement of the user's goal and the problem behind it, offered for confirmation before the work begins. Five moments, in the order the work meets them.
+The literal ask is a hypothesis about the goal. Four moments, in the order the work meets them.
 
-## 1. XY: is the ask the goal, or a step toward it?
+## 1. The XY problem: is the literal ask the real goal?
 
-The [XY problem](https://xyproblem.info/):
+A request that names a solution may sit one step removed from the problem. [The XY Problem](https://xyproblem.info/):
 
 > The XY problem is asking about your attempted solution rather than your actual problem.
 
-> - User wants to do X.
-> - User doesn't know how to do X, but thinks they can fumble their way to a solution if they can just manage to do Y.
-> - [...]
-> - User asks for help with Y.
-> - Others try to help user with Y, but are confused because Y seems like a strange problem to want to solve.
-> - After much interaction and wasted time, it finally becomes clear that the user really wants help with X, and that Y wasn't even a suitable solution for X.
+> User wants to do X. [...] Others try to help user with Y, but are confused because Y seems like a strange problem to want to solve. After much interaction and wasted time, it finally becomes clear that the user really wants help with X, and that Y wasn't even a suitable solution for X.
 
-Find the X behind the Y: the ask names a step when the goal stays unspoken.
+Its example exchange turns on the helper's pivot:
 
-## 2. Implicature: what did they mean, beyond what they said?
+> <feline> Why 3 characters? What do you REALLY want?
 
-SEP, [Implicature](https://plato.stanford.edu/entries/implicature/):
+When a request names a solution, ask for the problem it is meant to solve.
 
-> "Implicature" denotes either (i) the act of meaning or implying one thing by saying something else, or (ii) the object of that act.
+## 2. Mirroring: too little said to paraphrase
 
-> It is not possible to fully understand speakers without knowing what they have implicated as well as what they have said. [...] What someone implicates is not given to us directly. We have to *infer* it from evidence.
+A short or vague message gives you almost nothing to restate. Chris Voss, [3 Ways To Find The Space Between "Yes" & "No"](https://www.blackswanltd.com/newsletter/3-ways-to-find-the-space-between-yes-no), The Black Swan Group:
 
-> **Cooperative Principle.** Contribute what is required by the accepted purpose of the conversation.
+> Your 1st "go-to" move can always be mirroring. Repeating the last 1-3 words, or a selected 1-3 words with an upward inflection so it sounds like a question. Then go silent – an effective pause.
 
-Grice's checklist for working one out (same entry, quoting Grice 1975: 31):
+> Mirroring is neither acceptance or rejection. What it really is, is **respectful clarification**.
 
-> To work out that a particular conversational implicature is present, the hearer will rely on the following data: (1) the conventional meaning of the words used [...]; (2) the Cooperative Principle and its maxims; (3) the context, linguistic or otherwise, of the utterance; (4) other items of background knowledge; [...]
+> Mirrors cause them to go on and expand. [...] they help the speaker connect thoughts and keep talking.
 
-Infer the goal the words convey from the exchange's purpose and the context around them, and carry it into the playback marked as your inference.
+Repeat the user's critical words back as a question when the message gives you too little to paraphrase, and let their answer fill the gap.
 
-## 3. Homework: what does the workspace already answer?
+## 3. Listening with understanding: play it back to their satisfaction
 
-Eric Raymond and Rick Moen, [How To Ask Questions The Smart Way](http://www.catb.org/~esr/faqs/smart-questions.html):
+Carl Rogers, [Communication: Its Blocking and Its Facilitation](https://christian.gen.co/notes/communication/) (1951):
 
-> Before asking a technical question [...] do the following: [...] 5. Try to find an answer by inspection or experimentation. [...] 7. If you're a programmer, try to find an answer by reading the source code.
+> Real communication occurs, and this evaluative tendency is avoided, when we listen with understanding. What does that mean? It means to see the expressed idea and attitude from the other person's point of view, to sense how it feels to him, to achieve his frame of reference in regard to the thing he is talking about.
 
-> When you ask your question, display the fact that you have done these things first [...] Better yet, display what you have *learned* from doing these things.
+> Each person can speak up for himself only after he has first restated the ideas and feelings of the previous speaker accurately, and to that speaker's satisfaction.
 
-Inspect and read the workspace before spending a question on the user, then display what it taught you inside the playback.
+> [...] once you have been able to see the other's point of view, your own comments will have to be drastically revised.
 
-## 4. Total meaning: what are they trying to tell you?
+State the user's goal back to them in your own words, and let their acceptance gate what you do next.
 
-Carl Rogers and Richard Farson, [Active Listening](https://www.gordontraining.com/free-workplace-articles/active-listening/):
+## 4. Commander's intent: the confirmed goal defines done
 
-> Any message a person tries to get across usually has two components: the content of the message and the feeling or attitude underlying this content. Both are important; both give the message meaning. It is this total meaning of the message that we try to understand.
+Once the goal is confirmed, it outranks the wording of the ask. US Field Manual 5.0, as quoted in Wikipedia's [Intent (military)](https://en.wikipedia.org/wiki/Intent_(military)):
 
-> What is he trying to tell me? What does this mean to him? How does he see this situation?
+> The commander's intent succinctly describes what constitutes success for the operation. It includes the operation's purpose and the conditions that define the end state.
 
-> [...] he must first restate aloud the previous point or position of the other person. This restatement must be in his own words (merely parroting the words of another does not prove that one has understood but only that he has heard the words). The restatement must be accurate enough to satisfy the speaker [...]
+The article itself adds:
 
-Restate the goal and the problem behind it in your own words, content and feeling together: the X, the evidence behind it, and what the request is correcting.
+> It describes the end state and key tasks that, along with the mission, are the basis for subordinates' initiative.
 
-## 5. Grounding: is it clear enough to move forward?
-
-Wikipedia, [Grounding in communication](https://en.wikipedia.org/wiki/Grounding_in_communication), on Clark and Brennan's model:
-
-> There are generally two phases in grounding.
->
-> 1. Presenting utterance – speaker presents utterance to addressee
-> 2. Accepting utterance – addressee accepts utterance by providing evidence of understanding
-
-> According to this theory, mere utterance qualifies as presentation in conversation whereas contribution to conversation demands both utterance and assurance of mutual understanding.
-
-> Grounding criterion is the mutual belief between conversational partners that everyone involved has a clear enough understanding of the concept to move forward.
-
-The playback is the presentation; the reply is the acceptance. A correction re-opens the presentation: restate the repaired goal and close the loop before acting. When the goal is already clear enough to move forward, act.
+Let the confirmed purpose, not the literal ask, decide what done looks like.

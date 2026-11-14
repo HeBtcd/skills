@@ -1,105 +1,141 @@
 ---
 name: review-the-pr
 disable-model-invocation: true
-description: "Review a pull request produced faster than anyone can read: machines verify what they can, context checks cover what the diff cannot carry, and a person signs the risk. Use when asked to review, approve, or sign off on a PR, or to sweep a codebase for every instance of a defect class."
+description: "Review or sign off on a pull request produced faster than anyone can read it. Use when asked to approve a diff too big to read line by line, or to sweep a codebase for every instance of a defect class."
 ---
 
 # Review the PR
 
-Code review for agent-written pull requests: machines verify what they can, context checks cover what the diff cannot carry, and a person signs the risk. Six moments, in the order the work meets them.
+Spend finite attention where it decides the verdict; make the artifact carry the evidence the unread remainder cannot give.
 
-## 1. Gate: does this change even make sense, and can it be read?
+## 1. The Standard of Code Review
 
-Google's [Navigating a CL in Review](https://google.github.io/eng-practices/review/reviewer/navigate.html), step one:
+Google's engineering practices, [The Standard of Code Review](https://google.github.io/eng-practices/review/reviewer/standard.html):
 
-> Look at the CL description and what the CL does in general. Does this change even make sense? If this change shouldn’t have happened in the first place, please respond immediately with an explanation of why the change should not be happening.
+> [...] it is the duty of the reviewer to make sure that each CL is of such a quality that the overall code health of their codebase is not decreasing as time goes on.
 
-Step two, when the change outruns the reader:
+> [...] a reviewer has ownership and responsibility over the code they are reviewing.
+
+> **In general, reviewers should favor approving a CL once it is in a state where it definitely improves the overall code health of the system being worked on, even if the CL isn’t perfect.**
+
+> [...] there is no such thing as “perfect” code—there is only better code.
+
+State your verdict as a claim about the code health of the system, and name what degrades when you cannot approve.
+
+## 2. Navigating a CL in Review
+
+Google's engineering practices, [Navigating a CL in Review](https://google.github.io/eng-practices/review/reviewer/navigate.html):
+
+> Look at the CL description and what the CL does in general. Does this change even make sense?
+
+> Find the file or files that are the “main” part of this CL. [...] Look at these major parts first. This helps give context to all of the smaller parts of the CL, and generally accelerates doing the code review.
 
 > If the CL is too large for you to figure out which parts are the major parts, ask the developer what you should look at first, or ask them to split up the CL into multiple CLs.
 
-## 2. Machines: what did the checks already prove?
+> If you see some major design problems with this part of the CL, you should send those comments immediately, even if you don’t have time to review the rest of the CL right now.
 
-Read the machine verdicts before the code; a checkable claim no machine checked is a missing check. Sadowski, [*Software Engineering at Google*](https://abseil.io/resources/swe-book/html/ch20.html), ch. 20 "Static Analysis":
+> [...] it’s also helpful to read the tests first before you read the main code, because then you have an idea of what the change is supposed to be doing.
 
-> Anything that can be fixed automatically should be fixed automatically.
+Read the description and the tests before the implementation, and ask the author to name the main part when it is not obvious.
 
-> static analysis can save reviewer time by highlighting common issues automatically; static analysis tools help the code review process (and the reviewers) scale. Code review is a sweet spot for analysis results.
+## 3. What to Look For in a Code Review
 
-> pointing out formatting errors is not a good use of a human reviewer’s time.
+Google's engineering practices, [What to Look For in a Code Review](https://google.github.io/eng-practices/review/reviewer/looking-for.html):
 
-The Linux kernel docs, [Submitting patches](https://docs.kernel.org/process/submitting-patches.html), on ordering:
-
-> automated CI processes that attempt to run a series of tests in order to establish the quality of your submission before the maintainer starts the review.
-
-## 3. Look: does the code carry the intent?
-
-The navigation guide sets the reading order:
-
-> Sometimes it’s also helpful to read the tests first before you read the main code, because then you have an idea of what the change is supposed to be doing.
-
-Google's [What to look for in a code review](https://google.github.io/eng-practices/review/reviewer/looking-for.html) sets the checks:
-
-> The most important thing to cover in a review is the overall design of the CL. Do the interactions of various pieces of code in the CL make sense? Does this change belong in your codebase, or in a library? Does it integrate well with the rest of your system? Is now a good time to add this functionality?
+> The most important thing to cover in a review is the overall design of the CL.
 
 > Does this CL do what the developer intended? Is what the developer intended good for the users of this code?
 
-> Tests do not test themselves, and we rarely write tests for our tests—a human must ensure that tests are valid.
+> “Too complex” usually means “can’t be understood quickly by code readers.”
 
-> Will the tests actually fail when the code is broken?
+> Ask for unit, integration, or end-to-end tests as appropriate for the change. [...] Make sure that the tests in the CL are correct, sensible, and useful. Tests do not test themselves, and we rarely write tests for our tests—a human must ensure that tests are valid.
 
-> In the general case, look at *every* line of code that you have been assigned to review. [...] you should at least be sure that you *understand* what all the code is doing.
+> In the general case, look at every line of code that you have been assigned to review. Some things like data files, generated code, or large data structures you can scan over sometimes, but don’t scan over a human-written class, function, or block of code and assume that what’s inside of it is okay.
 
-Then the context the diff cannot carry:
+> [...] some code deserves more careful scrutiny than other code—that’s a judgment call that you have to make—but you should at least be sure that you understand what all the code is doing.
 
-> Usually the code review tool will only show you a few lines of code around the parts that are being changed. Sometimes you have to look at the whole file to be sure that the change actually makes sense. [...] It’s also useful to think about the CL in the context of the system as a whole. Is this CL improving the code health of the system or is it making the whole system more complex, less tested, etc.? **Don’t accept CLs that degrade the code health of the system.**
+> If it’s too hard for you to read the code and this is slowing down the review, then you should let the developer know that and wait for them to clarify it before you try to review it.
 
-And the limits of your own read: get a qualified reviewer, and say what your review covered:
+> Don’t accept CLs that degrade the code health of the system.
 
-> If you understand the code but you don’t feel qualified to do some part of the review, make sure there is a reviewer on the CL who is qualified, particularly for complex issues such as privacy, security, concurrency, accessibility, internationalization, etc.
+Read every line you approve, and ask for clarification where the code is too hard to read.
 
-> In these cases, note in a comment which parts you reviewed. [...] If you instead wish to grant LGTM after confirming that other reviewers have reviewed other parts of the CL, note this explicitly in a comment to set expectations.
+## 4. Inspection rate
 
-## 4. Sweep: where else does this defect live?
+SmartBear, [Best Practices for Code Review](https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/), on its study of a Cisco Systems team:
 
-One instance in the diff means the class may be everywhere. GitHub's CodeQL docs name the move [variant analysis](https://codeql.github.com/docs/codeql-overview/about-codeql/):
+> [...] developers should review no more than 200 to 400 lines of code (LOC) at a time. The brain can only effectively process so much information at a time; beyond 400 LOC, the ability to find defects diminishes.
+
+> [...] a review of 200-400 LOC over 60 to 90 minutes should yield 70-90% defect discovery.
+
+> [...] research shows a significant drop in defect density at rates faster than 500 LOC per hour.
+
+> [...] performance starts dropping off after about 60 minutes.
+
+> Omissions in particular are the hardest defects to find because it's difficult to review something that isn't there. Checklists are the most effective way to eliminate frequently made errors and to combat the challenges of omission finding.
+
+> Authors should annotate code before the review occurs because annotations guide the reviewer through the changes, showing which files to look at first and defending the reason behind each code modification.
+
+> [...] "spot checking" 20% to 33% of the code resulted in lower defect density with minimal time expenditure.
+
+Choose which files get your sharpest hour, work a checklist there, ask the author to annotate the rest, and note which parts you reviewed.
+
+## 5. Debugging is twice as hard
+
+Kernighan and Plauger, [The Elements of Programming Style](https://en.wikiquote.org/wiki/Brian_Kernighan), 2nd edition, chapter 2:
+
+> Everyone knows that debugging is twice as hard as writing a program in the first place. So if you're as clever as you can be when you write it, how will you ever debug it?
+
+For the parts you did not read, require runnable evidence of behavior: tests that pin the change, a demo, or a reproduction.
+
+## 6. Variant analysis
+
+GitHub, [About CodeQL](https://codeql.github.com/docs/codeql-overview/about-codeql/):
+
+> CodeQL is a language and toolchain for code analysis. It is designed to allow security researchers to scale their knowledge of a single vulnerability to identify variants of that vulnerability across a wide range of codebases.
 
 > Variant analysis is the process of using a known security vulnerability as a seed to find similar problems in your code. It’s a technique that security engineers use to identify potential vulnerabilities, and ensure these threats are properly fixed across multiple codebases.
 
-The instance found in review is the seed:
+> [...] develop or iterate over the query to automatically find logical variants of the same bug that could be missed using traditional manual techniques.
 
-> develop or iterate over the query to automatically find logical variants of the same bug that could be missed using traditional manual techniques.
+> [...] run that query across a large number of codebases, and identify all of the places where that vulnerability exists.
 
-## 5. Standard: approve when it leaves the codebase healthier
+> Following interpretation, results are output for code review and triaging.
 
-Google's [The Standard of Code Review](https://google.github.io/eng-practices/review/reviewer/standard.html):
+Write the defect's shape as a query, run it over the whole codebase, and triage every hit by hand.
 
-> In general, reviewers should favor approving a CL once it is in a state where it definitely improves the overall code health of the system being worked on, even if the CL isn’t perfect.
+## 7. Large-scale changes
 
-> there is no such thing as “perfect” code—there is only *better* code.
+Wright, [Software Engineering at Google](https://abseil.io/resources/swe-book/html/ch22.html), chapter 22, "Large-Scale Changes":
 
-> Nothing in this document justifies checking in CLs that definitely *worsen* the overall code health of the system. The only time you would do that would be in an emergency.
+> [...] an LSC is any set of changes that are logically related but cannot practically be submitted as a single atomic unit.
 
-> it is the duty of the reviewer to make sure that each CL is of such a quality that the overall code health of their codebase is not decreasing as time goes on.
+> LSCs at Google are almost always generated using automated tooling.
 
-> a reviewer has ownership and responsibility over the code they are reviewing.
+> In our experience, organic migrations are unlikely to fully succeed, in part because engineers tend to use existing code as examples when writing new code.
 
-## 6. Signature: a person signs the risk
+> Every change should be tested [...], but the larger the change, the more difficult it is to actually test it appropriately.
 
-The Linux kernel docs, [Submitting patches](https://docs.kernel.org/process/submitting-patches.html), on whose name a review carries:
+> [...] run as many tests as you can to be sure the change is safe.
 
-> Any interested reviewer (who has done the work and is a person with known identity) can offer a Reviewed-by tag for a patch.
+> [...] local owners don't often treat LSCs with the same rigor as regular changes—they trust the engineers generating LSCs too much.
 
-What the tag attests, the Reviewer's Statement of oversight:
+> Instead of reviewing each change individually, global reviewers use a separate set of pattern-based tooling to review each of the changes and automatically approve ones that meet their expectations. Thus, they need to manually examine only a small subset that are anomalous because of merge conflicts or tooling malfunctions, which allows the process to scale very well.
 
-> By offering my Reviewed-by: tag, I state that:
->
-> (a) I have carried out a technical review of this patch to evaluate its appropriateness and readiness for inclusion into the mainline kernel.
->
-> (b) Any problems, concerns, or questions relating to the patch have been communicated back to the submitter. I am satisfied with the submitter's response to my comments.
->
-> (c) While there may be things that could be improved with this submission, I believe that it is, at this time, (1) a worthwhile modification to the kernel, and (2) free of known issues which would argue against its inclusion.
->
-> (d) While I have reviewed the patch and believe it to be sound, I do not (unless explicitly stated elsewhere) make any warranties or guarantees that it will achieve its stated purpose or function properly in any given situation.
+Cut the fix into the largest shards you can test and review, and clear every instance before the old pattern seeds new code.
 
-Hand the person a record they can sign to (a) through (d): what the machines proved, which parts you reviewed, every problem raised, and how each was answered.
+## 8. Static analysis
+
+Sadowski, [Software Engineering at Google](https://abseil.io/resources/swe-book/html/ch20.html), chapter 20, "Static Analysis":
+
+> Static analysis refers to programs analyzing source code to find potential issues such as bugs, antipatterns, and other issues that can be diagnosed without executing the program.
+
+> Static analysis is [...] an integral tool in the API deprecation process, where it can prevent backsliding during migration of the codebase to a new API.
+
+> Anything that can be fixed automatically should be fixed automatically.
+
+> [...] analyses are contributed by developers who discover a bug and would like to prevent the same kind of bug from reappearing anywhere else in the codebase.
+
+> [...] static analysis can save reviewer time by highlighting common issues automatically; static analysis tools help the code review process (and the reviewers) scale. Code review is a sweet spot for analysis results.
+
+Leave the sweep's check standing in the review pipeline, so the pattern is flagged on every future change.

@@ -64,6 +64,8 @@ Claude Code docs, [Skills](https://code.claude.com/docs/en/skills), on who fires
 
 Under `disable-model-invocation`, the description's reader is the human or router deciding when to reach for it; the pointer rules are unchanged.
 
+Compose the description after the basis stands: it reports what the basis can do. A clause promising a moment the work never reaches is cut from the pointer before any Thing is imported to cover it.
+
 ## 3. Basis: the Things span the promise, once each
 
 Wikipedia, [Basis (linear algebra)](https://en.wikipedia.org/wiki/Basis_(linear_algebra)):
@@ -75,6 +77,8 @@ Wikipedia, [Basis (linear algebra)](https://en.wikipedia.org/wiki/Basis_(linear_
 > It is often convenient or even necessary to have an ordering on the basis vectors [...] one speaks of an **ordered basis**.
 
 V is the territory the pointer's promise states; the when-branches are its entries, and a promised branch no Thing owns is a hole. The moments inside V are the dimensions; each Thing is one vector owning one moment; the same source under two headings is one vector duplicated, or two moments that are one. Vectors order by the moment the work meets them; excerpts inside a vector, same rule.
+
+A moment is a decision point inside the act's own pipeline: not a precondition, a resource rule, or a general duty the reader owes everywhere. A vector's legitimacy comes from the work's own decomposition; name the moment it owns without citing the description. When the pointer names several branches, their moments order onto one spine; a branch whose moments cannot join the spine is a different Skill, not a tail to bolt on.
 
 Aquinas's razor (SEP, [Simplicity](https://plato.stanford.edu/entries/simplicity/)):
 
@@ -163,6 +167,6 @@ Amanda Askell on prompt engineering, [Lex Fridman Podcast #452](https://lexfridm
 
 > What could I have said that would make you not make that error? Write that out as an instruction, and I’m going to give it to model and I’m going to try it.
 
-The case that catches a failure lands on the moment that failed as an example under it, or earns a new vector when no moment owns it. When information would fundamentally change the execution outcome (a Skill's survival, a mechanism's owner, a verdict mid-audit), stop and ask the user.
+The case that catches a failure lands on the moment that failed as an example under it, or earns a new vector when no moment owns it. A challenge to a vector's legitimacy re-derives that slot from the work; post-hoc justification of an existing vector is the failure the challenge exists to catch. When information would fundamentally change the execution outcome (a Skill's survival, a mechanism's owner, a verdict mid-audit), stop and ask the user.
 
 On any change to the basis: update `name` when the trigger shifted, every index the collection keeps (each index entry carrying the description's trigger wording), and every `grep` match; run the collection's validator when it ships one; then fetch each linked source and diff every block quote in `SKILL.md` against the original; where upstream has drifted, the quote follows the original.

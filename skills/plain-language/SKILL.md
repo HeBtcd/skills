@@ -1,130 +1,114 @@
 ---
 name: plain-language
 disable-model-invocation: true
-description: "Rewrite text in plain language while preserving its exact meaning. Use when a spec, instruction, doc, or UI copy is too long, jargon-dense, or overwrought for its reader."
+description: "Rewrite a spec, instruction, doc, or UI copy into plain language, preserving exact meaning. Use when the text is too long, jargon-dense, or overwrought for its reader."
 ---
 
 # Plain Language
 
-A rewrite in plain language says the same thing in words the reader owns: shorter, clearer, no meaning lost. Six moments, in the order the work meets them.
+## 1. Write for your audience
 
-## 1. Audience: who is this for?
+Wikipedia, [Plain language](https://en.wikipedia.org/wiki/Plain_language), quoting the Center for Plain Language:
 
-Federal Plain Language Guidelines, [Write for your audience](https://www.plainlanguage.gov/guidelines/audience/):
+> [a] document, web site or other information is in plain language if the target audience can read it, understand what they read, and confidently act on it
+
+> Writing in plain language does not mean oversimplifying the concepts, but presenting the information in a way that makes it easier to understand and use by a wider audience.
+
+Federal Plain Language Guidelines, [Write for your audience](https://raw.githubusercontent.com/GSA/plainlanguage.gov/main/_pages/guidelines/audience/index.md):
 
 > One of the most popular plain language myths is that you have to "dumb down" your content so that everyone can read it. That's not true.
 
-> The first rule of plain language is: **write for your audience**. Use language your audience understands and feels comfortable with. Take your audience's current level of knowledge into account. Don't write for an 8th-grade class if your audience is composed of PhD candidates, small business owners, working parents, or immigrants. Only write for 8th graders if your audience is, in fact, an 8th-grade class.
+> The first rule of plain language is: **write for your audience**. [...] Know the expertise and interest of your average reader, and write to that person.
 
-> Know the expertise and interest of your average reader, and write to that person. Don't write to the experts, the lawyers, or your management, unless they are your intended audience.
+> Who is my audience? What does my audience already know about the subject? What does my audience need to know? What questions will my audience have? [...]
 
-Set the level before touching a word; the same guidelines ask:
+Before changing a word, answer those questions for this text: who reads it, what they already know, and what they must be able to do with it.
 
-> - Who is my audience?
-> - What does my audience already know about the subject?
-> - What does my audience need to know?
-> - What questions will my audience have?
-> - [...]
-> - What's the best outcome for our audience? What do I need to say to get this outcome?
+## 2. Inverted pyramid
 
-## 2. Cut: what carries nothing?
+Wikipedia, [Inverted pyramid](https://en.wikipedia.org/wiki/Inverted_pyramid_(journalism)):
 
-William Strunk, [The Elements of Style](https://www.gutenberg.org/files/37134/37134-h/37134-h.htm) (1918):
+> The inverted pyramid is a metaphor used by journalists and other writers to illustrate how information should be prioritised and structured in prose [...] It is a way to communicate the basics about a topic in the initial sentences.
 
-> Vigorous writing is concise. A sentence should contain no unnecessary words, a paragraph no unnecessary sentences, for the same reason that a drawing should have no unnecessary lines and a machine no unnecessary parts. This requires not that the writer make all his sentences short, or that he avoid all detail and treat his subjects only in outline, but that he make every word tell.
+> The widest part at the top represents the most substantial, interesting, and important information that the writer means to convey, illustrating that this kind of material should head the article, while the tapering lower portion illustrates that other material should follow in order of diminishing importance.
 
-Federal Plain Language Guidelines, [Be concise](https://www.plainlanguage.gov/guidelines/concise/):
+> First, readers can leave the story at any point and understand it, even if they do not have all the details.
 
-> Challenge every word—do you need it?
+> This system also means that information less vital to the reader's understanding comes later in the story, where it is easier to edit out for space or other reasons. This is called "cutting from the bottom."
 
-> Omit information that the audience doesn't need to know.
+Lead with the point the reader most needs or the action they must take, and order everything after it by diminishing importance.
 
-Cut at every scale, whole section to single word: removing what carries nothing is the one edit that can never cost meaning. The same guidelines take a 54-word sentence to 22 "with no loss of meaning."
+## 3. Omit needless words
 
-## 3. Structure: where does the point land?
+William Strunk, Jr., [The Elements of Style](https://www.gutenberg.org/cache/epub/37134/pg37134.txt) (1918), rule 13:
 
-Federal Plain Language Guidelines, [Organize the information](https://www.plainlanguage.gov/guidelines/organize/):
+> Vigorous writing is concise. A sentence should contain no unnecessary words, a paragraph no unnecessary sentences, for the same reason that a drawing should have no unnecessary lines and a machine no unnecessary parts.
 
-> Organization is key. Start by stating your purpose and the bottom line. Lay things out in a logical order. Put the most important information at the beginning and include background information (when necessary) toward the end.
+> This requires not that the writer make all his sentences short, or that he avoid all detail and treat his subjects only in outline, but that he make every word tell.
 
-The same source, [Have a topic sentence](https://www.plainlanguage.gov/guidelines/organize/have-a-topic-sentence/):
+Cut every sentence and word that does no work for the reader, and make every word that remains tell.
 
-> We often write the way we think, putting our premises first and then our conclusion. It may be the natural way to develop thoughts, but we wind up with the topic sentence at the end of the paragraph. Move it up front and let users know where you're going. Don't make readers hold a lot of information in their heads before getting to the point.
+## 4. Sentences: one idea, the actor named, the reader addressed
 
-> Readers should be able to get good general understanding of your document by skimming your topic sentences.
-
-[Add useful headings](https://www.plainlanguage.gov/guidelines/organize/add-useful-headings/):
-
-> Well organized writing will still be difficult for users to follow if they can't see how it's organized. An effective way to reveal your document's organization is to use lots of useful headings.
-
-> Question headings are useful if you know what questions your audience will ask. [...] If you know those questions, use them as headings.
-
-[Use lists](https://www.plainlanguage.gov/guidelines/organize/use-lists/):
-
-> Lists highlight a series of steps, requirements, or pieces of information in a visually clear way. Use lists to help your user focus on important material.
-
-Order the surviving material so the reader can see its shape: the point first, steps in order, a heading naming each chunk, a list for each set.
-
-## 4. Words: whose vocabulary?
-
-George Orwell, [Politics and the English Language](https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/) (1946):
-
-> ii. Never use a long word where a short one will do.
->
-> v. Never use a foreign phrase, a scientific word or a jargon word if you can think of an everyday English equivalent.
-
-> What is above all needed is to let the meaning choose the word, and not the other way about. In prose, the worst thing one can do with words is to surrender to them.
-
-H. W. Fowler's five preferences (The King's English, 1906), relayed in the guidelines' [Choose your words carefully](https://www.plainlanguage.gov/guidelines/words/):
-
-> Prefer the familiar word to the far-fetched.
-> Prefer the concrete word to the abstraction.
-> Prefer the single word to the circumlocution.
-> Prefer the short word to the long.
-> Prefer the Saxon word to the Romance word.
-
-Federal Plain Language Guidelines, [Avoid jargon](https://www.plainlanguage.gov/guidelines/words/avoid-jargon/):
-
-> Jargon is unnecessarily complicated language used to impress, rather than to inform, your audience.
-
-> Special terms can be useful shorthand within a particular audience and may be the clearest way to communicate with that group.
-
-> When you have no way to express an idea except to use technical language, make sure to define your terms.
-
-Swap each word for the everyday equivalent this reader owns; check the survivors against the guidelines' [simple words and phrases](https://www.plainlanguage.gov/guidelines/words/use-simple-words-phrases/) table. Keep the term only when it is the everyday word for this audience, and define it where it first appears.
-
-## 5. Sentences: where does it tangle?
-
-Federal Plain Language Guidelines, [Write short sentences](https://www.plainlanguage.gov/guidelines/concise/write-short-sentences/):
+Federal Plain Language Guidelines, [Write short sentences](https://raw.githubusercontent.com/GSA/plainlanguage.gov/main/_pages/guidelines/concise/write-short-sentences.md):
 
 > Express only one idea in each sentence. [...] Shorter sentences are also better for conveying complex information; they break the information up into smaller, easier-to-process units.
 
 > Resist the temptation to put everything in one sentence; break up your idea into its parts and make each one the subject of its own sentence.
 
-The same source, [Use active voice](https://www.plainlanguage.gov/guidelines/conversational/use-active-voice/):
+[Use active voice](https://raw.githubusercontent.com/GSA/plainlanguage.gov/main/_pages/guidelines/conversational/use-active-voice.md):
 
 > Active voice makes it clear who is supposed to do what. It eliminates ambiguity about responsibilities. Not "It must be done," but "You must do it."
 
-[Avoid hidden verbs](https://www.plainlanguage.gov/guidelines/words/avoid-hidden-verbs/):
+[Address the user](https://raw.githubusercontent.com/GSA/plainlanguage.gov/main/_pages/guidelines/audience/address-the-user.md):
 
-> A hidden verb (or nominalization) is a verb converted into a noun. It often needs an extra verb to make sense. For example, "Please make an application for a personal loan" is longer and less clear than "Please apply for a personal loan."
+> Even though your document may affect a thousand or a million people, you are speaking to the one person who is reading it.
 
-Orwell's rules, cited above, add:
+> Don't say | Say
+> --- | ---
+> Copies of tax returns must be provided. | You must provide copies of your tax returns.
 
-> iv. Never use the passive where you can use the active.
+[Use "must" to indicate requirements](https://raw.githubusercontent.com/GSA/plainlanguage.gov/main/_pages/guidelines/conversational/use-must-to-indicate-requirements.md):
 
-Rebuild each tangle: one idea per sentence, the actor as subject, the action as a real verb.
+> The word "must" is the clearest way to convey to your audience that they have to do something.
 
-## 6. Test: does it still say the same thing?
+> "must" for an obligation [...] "must not" for a prohibition [...] "may" for a discretionary action [...] "should" for a recommendation
 
-Federal Plain Language Guidelines, [Paraphrase testing](https://www.plainlanguage.gov/guidelines/test/paraphrase-testing/):
+[Use positive language](https://raw.githubusercontent.com/GSA/plainlanguage.gov/main/_pages/guidelines/concise/use-positive-language.md):
+
+> An exception that contains an exception is just another form of a double negative. That makes it even harder for the user to puzzle out. Rewrite the sentence to emphasize the positive.
+
+Rebuild each sentence to carry one idea, name who does what, address the reader as "you," map each modal to its obligation, and state conditions positively.
+
+## 5. Let the meaning choose the word
+
+George Orwell, [Politics and the English Language](https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/) (1946):
+
+> What is above all needed is to let the meaning choose the word, and not the other way about.
+
+> ii. Never use a long word where a short one will do.
+> [...]
+> v. Never use a foreign phrase, a scientific word or a jargon word if you can think of an everyday English equivalent.
+> vi. Break any of these rules sooner than say anything outright barbarous.
+
+Federal Plain Language Guidelines, [Use the same terms consistently](https://raw.githubusercontent.com/GSA/plainlanguage.gov/main/_pages/guidelines/words/use-the-same-terms-consistently.md):
+
+> You will confuse your audience if you use different terms for the same concept or object. [...] Using a different term may cause the reader to wonder if you're referring to the same group.
+
+> You don't need to use synonyms to make your writing more interesting. [...] While using different words may make writing more interesting, it can decrease clarity.
+
+Swap every long, foreign, or jargon word for the everyday equivalent that carries the same meaning, and keep each defined term and name constant through the text.
+
+## 6. Check the round trip
+
+Federal Plain Language Guidelines, [Paraphrase testing](https://raw.githubusercontent.com/GSA/plainlanguage.gov/main/_pages/guidelines/test/paraphrase-testing.md):
 
 > Paraphrase testing will tell you what a reader thinks a piece of writing means and will help you know if they're interpreting the message as you intended.
 
-> Each time the participant reaches a cue, ask the participant to tell you in his or her own words what that section means. [...] wherever participants misunderstood the message, the document has a problem that you should fix.
+> [...] ask the participant to tell you in his or her own words what that section means. [...] wherever participants misunderstood the message, the document has a problem that you should fix.
 
-Run the paraphrase test on your own rewrite: restate what each section says in your own words and check it against the original. Every claim, number, qualifier, and exception survives; nothing appears that the original did not say. Where a choice could have shifted the meaning, flag it for the human to judge.
+Wikipedia, [Translation](https://en.wikipedia.org/wiki/Translation#Back-translation), "Back-translation":
 
-The rules are instruments; when one misfires, Orwell's last rule retires it:
+> A "back-translation" is a translation of a translated text back into the language of the original text, made without reference to the original text. Comparison of a back-translation with the original text is sometimes used as a check on the accuracy of the original translation, much as the accuracy of a mathematical operation is sometimes checked by reversing the operation.
 
-> vi. Break any of these rules sooner than say anything outright barbarous.
+Restate the source's claims in your own words, then check that your rewrite paraphrases to the same set, every fact, condition, and hedge surviving and nothing added; where the source admits two readings, ask which one to keep.

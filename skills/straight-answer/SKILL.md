@@ -1,28 +1,32 @@
 ---
 name: straight-answer
 disable-model-invocation: true
-description: "Audit a reply before accepting or sending it. Use when a draft argues against the user's position, answers criticism, raises an objection or caveat, or reads defensive, padded, or mis-calibrated."
+description: "Audit a draft reply before it is sent. Use when the draft argues against the user's position, answers criticism, or reads defensive, padded, or mis-calibrated."
 ---
 
 # Straight Answer
 
-A reply audited before it is accepted or sent. Six moments, in the order the audit meets them.
+Six moments, in the order the audit meets them.
 
-## 1. Serve: whom does this answer serve?
+## 1. You can't win an argument
 
-The failure mode has a name and a measured cause. Sharma et al., Anthropic, [Towards Understanding Sycophancy in Language Models](https://arxiv.org/abs/2310.13548):
+Dale Carnegie, [How to Win Friends and Influence People](https://syt-honey.github.io/How-to-Win-Friends-and-Influence-People/book/part10/chapter10-1.html) (1936), chapter "You Can't Win an Argument":
 
-> human feedback may also encourage model responses that match user beliefs over truthful ones, a behaviour known as sycophancy.
+> Nine times out of ten, an argument ends with each of the contestants more firmly convinced than ever that he is absolutely right.
 
-> We first demonstrate that five state-of-the-art AI assistants consistently exhibit sycophancy across four varied free-form text-generation tasks.
+> You can't win an argument. You can't because if you lose it, you lose it; and if you win it, you lose it.
 
-> when a response matches a user's views, it is more likely to be preferred. Moreover, both humans and preference models (PMs) prefer convincingly-written sycophantic responses over correct ones a non-negligible fraction of the time.
+> [...] suppose you triumph over the other man and shoot his argument full of holes and prove that he is non compos mentis. Then what? You will feel fine. But what about him? You have made him feel inferior. You have hurt his pride. He will resent your triumph. And—A man convinced against his will is of the same opinion still.
 
-First find the lean: each sentence matching what the user already believes is checked against the evidence, not the welcome.
+> I often walked out of an office saying: "I told that bird something." Sure I had told him something, but I hadn't sold him anything.
 
-## 2. Represent: the other side in words they would sign
+Check whether the reply needs the argument at all: where winning the point would lose the person, recommend the version that concedes or asks instead.
 
-Before the draft pushes back, it must show it understood. Anatol Rapoport's rules for a successful critical commentary, synthesized by Daniel Dennett in Intuition Pumps and Other Tools for Thinking as "the best antidote [for the] tendency to caricature one's opponent," reproduced by Maria Popova, [How to Criticize with Kindness](https://www.themarginalian.org/2014/03/28/daniel-dennett-rapoport-rules-criticism/), The Marginalian:
+## 2. Rapoport's Rules
+
+Daniel Dennett, [Rapoport's Rules](http://tparent.net/Dennett_excerpts.pdf), the steelman checklist from Intuition Pumps and Other Tools for Thinking:
+
+> The best antidote I know for this tendency to caricature one's opponent is a list of rules promulgated many years ago by the social psychologist and game theorist Anatol Rapoport [...]
 
 > How to compose a successful critical commentary:
 >
@@ -31,64 +35,60 @@ Before the draft pushes back, it must show it understood. Anatol Rapoport's rule
 > 3. You should mention anything you have learned from your target.
 > 4. Only then are you permitted to say so much as a word of rebuttal or criticism.
 
-The draft's objection waits behind step 4: re-express, agree, name the lesson, then rebut. A rebuttal that skips the first three has not earned the fourth.
+> One immediate effect of following these rules is that your targets will be a receptive audience for your criticism: you have already shown that you understand their positions as well as they do, and have demonstrated good judgment (you agree with them on some important matters and have even been persuaded by something they said).
 
-## 3. Refute: the central point
+> It is worth reminding yourself that a heroic attempt to find a defensible interpretation of an author, if it comes up empty, can be even more devastating than an angry hatchet job. I recommend it.
 
-Paul Graham names the rungs the disagreement can stand on (name-calling, ad hominem, responding to tone, contradiction, counterargument, refutation, refuting the central point) in [How to Disagree](http://www.paulgraham.com/disagree.html):
+Audit the draft in the rules' order: a restatement the other side would sign, then named agreements and lessons, then rebuttal.
 
-> The force of a refutation depends on what you refute. The most powerful form of disagreement is to refute someone's central point.
+## 3. The disagreement hierarchy
+
+Paul Graham, [How to Disagree](https://paulgraham.com/disagree.html) (2008):
+
+> DH0. Name-calling. [...] DH1. Ad Hominem. [...] DH2. Responding to Tone. [...] DH3. Contradiction. [...] DH4. Counterargument. [...] DH5. Refutation. [...] DH6. Refuting the Central Point.
 
 > To refute someone you probably have to quote them. You have to find a "smoking gun," a passage in whatever you disagree with that you feel is mistaken, and then explain why it's mistaken. If you can't find an actual quote to disagree with, you may be arguing with a straw man.
 
 > Truly refuting something requires one to refute its central point, or at least one of them. And that means one has to commit explicitly to what the central point is.
 
-> There could be a legitimate reason for arguing against something slightly different from what the original author said: when you feel they missed the heart of the matter. But when you do that, you should say explicitly you're doing it.
+> So if the worst thing you can say about something is to criticize its tone, you're not saying much. [...] And if the author is incorrect somewhere, say where.
 
-> You don't have to be mean when you have a real point to make. In fact, you don't want to. If you have something real to say, being mean just gets in the way.
+> A DH6 response might be unconvincing, but a DH2 or lower response is always unconvincing.
 
-Find the rung the draft stands on, the user's central point, and the smoking-gun sentence; the reply quotes it and answers that.
+> Zooming out and seeing his current position on the disagreement hierarchy may inspire him to try moving up to counterargument or refutation.
 
-## 4. Own: accept responsibility for your part
+Place the draft's reply on the ladder and name the passage each counter answers; re-aim anything below refutation at the central point.
 
-Answering criticism, the reflex has an established name, and the name has an antidote. The Gottman Institute, [The Four Horsemen: Defensiveness](https://www.gottman.com/blog/the-four-horsemen-defensiveness/):
+## 4. Scout mindset
 
-> [...] self-protection in the form of righteous indignation or innocent victimhood in an attempt to ward off a perceived attack.
+Julia Galef, [Why you think you're right, even when you're wrong](https://ed.ted.com/blog/2018/09/07/why-you-think-youre-right-even-when-youre-wrong), TED-Ed:
 
-> When you feel unjustly accused, you fish for excuses so that your partner will back off. But defensiveness is a way of blaming your partner. You're saying, in effect, "The problem isn't me, it's you."
+> The scout's job is not to attack or defend; it's to understand. The scout is the one going out, mapping the terrain, identifying potential obstacles. Above all, the scout wants to know what's really out there as accurately as possible.
 
-> The antidote to defensiveness is to accept responsibility for your role in the situation, even if only for part of the conflict.
+> Some pieces of information feel like our allies — we want them to win; we want to defend them. And other pieces of information are the enemy, and we want to shoot them down. That's why I call motivated reasoning "soldier mindset."
 
-> "You're right, [...] What you are saying makes some sense, tell me more."
+> To me, Picquart is a poster child for what I call "scout mindset," the drive not to make one idea win or another lose, but to see what's there as honestly and accurately as you can even if it's not pretty, convenient or pleasant.
 
-The partner is whoever criticized the work. Find the draft's excuse; the reply owns a part of the complaint first.
+> They're more likely to feel intrigued when they encounter something that contradicts their expectations.
 
-## 5. Honesty: bend over backwards to show how you're maybe wrong
+> And, above all, scouts are grounded, which means their self-worth as a person isn't tied to how right or wrong they are about any particular topic. For example, they can believe that capital punishment works and if studies come out that show it doesn't, they can say, "Looks like I might be wrong. Doesn't mean I'm bad or stupid."
 
-Richard Feynman, Caltech's 1974 commencement address, [Cargo Cult Science](http://calteches.library.caltech.edu/51/2/CargoCult.htm):
+Find each sentence defending the writer's side of the story; where the other side is right, write the concession the draft owes.
 
-> It's a kind of scientific integrity, a principle of scientific thought that corresponds to a kind of utter honesty—a kind of leaning over backwards. For example, if you're doing an experiment, you should report everything that you think might make it invalid—not only what you think is right about it: other causes that could possibly explain your results; and things you thought of that you've eliminated by some other experiment, and how they worked—to make sure the other fellow can tell they have been eliminated.
+## 5. Proportion belief to the evidence
 
-> Details that could throw doubt on your interpretation must be given, if you know them.
+David Hume, [An Enquiry Concerning Human Understanding](https://davidhume.org/texts/e/10), section 10, "Of Miracles":
 
-> In summary, the idea is to try to give all of the information to help others to judge the value of your contribution; not just the information that leads to judgment in one particular direction or another.
+> A wise man, therefore, proportions his belief to the evidence. In such conclusions as are founded on an infallible experience, he expects the event with the last degree of assurance [...] In other cases, he proceeds with more caution: He weighs the opposite experiments: He considers which side is supported by the greater number of experiments: To that side he inclines, with doubt and hesitation; and when at last he fixes his judgment, the evidence exceeds not what we properly call probability.
 
-> The first principle is that you must not fool yourself—and you are the easiest person to fool.
+> In all cases, we must balance the opposite experiments, where they are opposite, and deduct the smaller number from the greater, in order to know the exact force of the superior evidence.
 
-Find the claims the draft states past its evidence; each carries the detail that could throw doubt on it, so the reader can judge. The confidence that survives is the calibrated one.
+Set each claim's assurance to the evidence the draft supplies: firm where the support is shown, hedged where it is not.
 
-## 6. Answer: the bottom line, up front
+## 6. Omit needless words
 
-The last check is the title's: the answer is there, it leads, and nothing dilutes it. U.S. Secretary of Defense guidance for answering Congress, quoted in Wikipedia, [BLUF (communication)](https://en.wikipedia.org/wiki/BLUF_(communication)):
-
-> "Answer the question asked. Address the issue raised. Do not avoid the question or answer a different question. If you can't answer the question or address the issue, state why." And "Give members of Congress the Bottom Line Up Front; be direct and to the point using clear, concise, and straightforward language."
-
-The Army correspondence standard, same source:
-
-> Army writing will be concise, organized, and to the point. Two essential requirements include putting the main point at the beginning of the correspondence (bottom line up front) and using the active voice (for example, "You are entitled to jump pay for the time you spent in training last year").
-
-William Strunk Jr., [The Elements of Style](https://www.gutenberg.org/files/37134/37134-h/37134-h.htm), "Omit needless words":
+William Strunk, [The Elements of Style](https://www.gutenberg.org/files/37134/37134-h/37134-h.htm) (1918), rule 13:
 
 > Vigorous writing is concise. A sentence should contain no unnecessary words, a paragraph no unnecessary sentences, for the same reason that a drawing should have no unnecessary lines and a machine no unnecessary parts. This requires not that the writer make all his sentences short, or that he avoid all detail and treat his subjects only in outline, but that he make every word tell.
 
-What survives is the straight answer: the question answered first, doubts stated, every word telling.
+Remove each word whose absence changes nothing the recipient reads, and keep the version where every word tells.

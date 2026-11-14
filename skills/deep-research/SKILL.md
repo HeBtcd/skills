@@ -1,109 +1,100 @@
 ---
 name: deep-research
 disable-model-invocation: true
-description: "Research a decision against field evidence: postmortems, incident reports, and real-world failure cases. Use when the question is what actually happens in production and standard recommendations or generic summaries fail to settle an important decision. Not for naming lookups or codebase questions."
+description: "Deep research that settles a decision with production evidence: frame an answerable question, hunt the primary record, weigh competing explanations, report calibrated findings. Use when an important decision rides on what actually happens in production and standard recommendations or generic summaries will not settle it."
 ---
 
 # Deep Research
 
-Six moves for finding decision-relevant evidence in the field's own record (reports and failure cases where generic summaries fall short) in the order the work meets them.
+Evidence work for a decision that rides on what actually happens in production. Six moments, in the order the work meets them.
 
-## 1. The question: the anatomy evidence can answer
+## 1. PICO: the question a piece of evidence can settle
 
-Name the decision first, then build the question so the record can answer it: the [PICO process](https://en.wikipedia.org/wiki/PICO_process), evidence-based practice's question anatomy from Richardson (1995):
+Wikipedia, [PICO process](https://en.wikipedia.org/wiki/PICO_process), the mnemonic evidence-based practice uses to frame an answerable question:
 
-> a mnemonic used in evidence-based practice [...] to frame and answer a clinical or health care related question, though it is also argued that PICO "can be used universally for every scientific endeavour in any discipline with all study designs". [...] The PICO framework is also used to develop literature search strategies [...]
-
+> The PICO acronym has come to stand for:
+>
 > * **P** – Patient, problem, or population
 > * **I** – Intervention
 > * **C** – Comparison, control, or comparator
 > * **O** – Outcome(s) [...]
 
-Map the anatomy to the decision: the population is systems shaped like yours, the intervention is the practice under consideration, the comparison is its live alternative, and the outcome is what happened: the incidents, costs, and failure modes that would flip the decision.
+> a more abstract view of the PICO mnemonic, equating them with four components [...] (1) research object; (2) application of a theory or method; (3) alternative theories or methods (or, in their absence, the null hypothesis); and (4) the ultimate goal of knowledge generation.
 
-## 2. The corpus: hunt the grey literature
+> The PICO framework is also used to develop literature search strategies, for instance in systematic reviews.
 
-Field evidence lives where publishing is not the producer's business. The National Library of Medicine's [Grey Literature](https://www.ncbi.nlm.nih.gov/sites/books/NBK518722/) guidelines, on the Luxembourg Convention:
+Write the decision as one PICO question: the production context (P), the option under test (I), the alternative it must beat (C), and the observable outcome (O) that settles it.
 
-> that which is produced on all levels of government, academics, business and industry in print and electronic formats, but which is not controlled by commercial publishers
+## 2. Grey literature: where production keeps its record
 
-> This category broadly includes reports, theses and dissertations, conference proceedings, standards, technical documentation, datasets, preprints, web content, and government documents.
+Wikipedia, [Grey literature](https://en.wikipedia.org/wiki/Grey_literature):
 
-Hunt the production instances: postmortems and incident repositories, conference talks and transcripts, issue trackers and mailing lists, technical reports and white papers.
+> Grey literature (or gray literature) is material and research produced by organizations outside of the traditional commercial or academic publishing and distribution channels. Common grey literature publication types include reports (annual, research, technical, project, etc.), working papers, blog posts, government documents, white papers and evaluations.
 
-## 3. The hunt: let each find rewrite the query
+> These include research and project reports, annual or activity reports, theses, conference proceedings, preprints, working papers, newsletters, technical reports, recommendations and technical standards, patents, technical notes, data and statistics, presentations, field notes, laboratory research books, academic courseware, lecture notes, evaluations, and many more.
 
-Real searches evolve. Marcia Bates, [The Design of Browsing and Berrypicking Techniques for the Online Search Interface](https://pages.gseis.ucla.edu/faculty/bates/berrypicking.html) (1989):
+> [...] sharing information on how and why things occurred (technical reports and specifications, briefings, evaluations, project reports) [...]
 
-> In real-life searches in manual sources, end users may begin with just one feature of a broader topic, or just one relevant reference, and move through a variety of sources. Each new piece of information they encounter gives them new ideas and directions to follow and, consequently, a new conception of the query. At each stage they are not just modifying the search terms used in order to get a better match for a single query. Rather the query itself (as well as the search terms used) is continually shifting, in part or whole. This type of search is here called an evolving search.
+> Grey literature may be difficult to discover, access and evaluate, but this can be addressed through the formulation of sound search strategies.
 
-> [...] the query is satisfied not by a single final retrieved set, but by a series of selections of individual references and bits of information at each stage of the ever-modifying search. A bit-at-a-time retrieval of this sort is here called berrypicking.
+Hunt the record production writes about itself: incident reports and postmortems, benchmarks, changelogs and deprecation notices, conference talks, issue threads and forum posts by the people who ran it.
 
-Six moves, chosen by the lead the last find produced:
+## 3. Berrypicking: the search that evolves
 
-> **Footnote chasing** (or "backward chaining") [...] following up footnotes found in books and articles of interest, and therefore moving backward in successive leaps through reference lists.
+Marcia Bates, [The Design of Browsing and Berrypicking Techniques for the Online Search Interface](https://pages.gseis.ucla.edu/faculty/bates/berrypicking.html) (1989):
 
-> **Citation searching** (or "forward chaining"). One begins with a citation, finds out who cites it by looking it up in a citation index, and thus leaps forward.
+> Each new piece of information they encounter gives them new ideas and directions to follow and, consequently, a new conception of the query. At each stage they are not just modifying the search terms used in order to get a better match for a single query. Rather the query itself (as well as the search terms used) is continually shifting, in part or whole. This type of search is here called an evolving search.
 
-> **Journal run**. Once, by whatever means, one identifies a central journal in an area, one then locates the run of volumes of the journal and searches straight through relevant volume years.
+> In other words, the query is satisfied not by a single final retrieved set, but by a series of selections of individual references and bits of information at each stage of the ever-modifying search. A bit-at-a-time retrieval of this sort is here called berrypicking.
 
-> **Area scanning**. Browsing the materials that are physically collocated with materials located earlier in a search is a widely used and effective technique.
-
-> **Subject searches in bibliographies and abstracting and indexing (A & I) services**. Many bibliographies and most A & I services are arranged by subject.
-
-> **Author searching.** [...] uses an author name to see if the author has done any other work on the same topic
+> **Footnote chasing** [...] involves following up footnotes found in books and articles of interest, and therefore moving backward in successive leaps through reference lists. [...] **Citation searching** [...] One begins with a citation, finds out who cites it by looking it up in a citation index, and thus leaps forward. [...] **Author searching** [...] can be an effective part of subject searching as well, when a searcher uses an author name to see if the author has done any other work on the same topic
 
 > It is part of the nature of berrypicking that people adapt the strategy to the particular need at the moment; as the need shifts in part or whole, the strategy often shifts as well [...]
 
-## 4. The source: leave the site to read it
+Let each find redirect the hunt: chase the citations a strong source leans on, find who cites it back, run the authors and venues that keep surfacing, and let the question sharpen as the evidence sharpens it.
 
-Each find is a stranger until vetted. Sam Wineburg, [To navigate the dangers of the web, you need critical thinking - but also critical ignoring](https://theconversation.com/to-navigate-the-dangers-of-the-web-you-need-critical-thinking-but-also-critical-ignoring-158617), The Conversation:
+## 4. Lateral reading: leave the site to judge it
 
-> She evaluated the site by leaving it. Fact checkers engage in what we call lateral reading, opening up new tabs across the top of their screens to search for information about an organization or individual before diving into a site's contents.
+Wineburg and McGrew, [Lateral Reading and the Nature of Expertise](https://stacks.stanford.edu/file/yk133ht8603/Wineburg%20McGrew_Lateral%20Reading%20and%20the%20Nature%20of%20Expertise.pdf), Teachers College Record (2019), on how professional fact checkers appraise unfamiliar sources:
 
-> Only after consulting the open web do they gauge whether expending attention is worth it.
+> Historians and students often fell victim to easily manipulated features of websites, such as official-looking logos and domain names. They read vertically, staying within a website to evaluate its reliability. In contrast, fact checkers read laterally, leaving a site after a quick scan and opening up new browser tabs in order to judge the credibility of the original site.
 
-> By dwelling on an unfamiliar site, imagining ourselves smart enough to outsmart it, we squander attention and cede control to the site's designers.
+> Fact checkers, in short, learned most about a site by leaving it.
 
-Vet who produced the report (the organization's funding and history, the author's seat) by what the rest of the web says about them, before the contents earn your time.
+> Staying on a single webpage and carefully parsing its content, before one has even established whether a site is what it says it is, is a woefully inefficient way to navigate treacherous digital territory.
 
-## 5. The incident: ask how
+> Before clicking on any result, they mined Google’s snippets for the wealth of information they contain. They examined each URL, considered the source of the information, and scanned the brief but fecund sentence fragments before alighting on a link to click.
 
-A failure report is a narrative of conditions, not a verdict on a person. John Allspaw, [The infinite hows](https://www.oreilly.com/radar/the-infinite-hows/), O'Reilly Radar:
+Leave each source to judge it: search who publishes and funds it, who else reports the claim, and read the whole results page before committing to a click.
 
-> In order to learn (which should be the goal of any retrospective or post-hoc investigation) you want multiple and diverse perspectives. You get these by asking people for their own narratives. Effectively, you're asking "how?"
+## 5. Analysis of competing hypotheses: weigh findings across every candidate
 
-> Asking "how?" gets you to describe (at least some) of the conditions that allowed an event to take place, and provides rich operational data.
+Richards Heuer, [Psychology of Intelligence Analysis](https://www.cia.gov/resources/csi/static/9a5f1162fd0932c29bfed1c030edf4ae/Pyschology-of-Intelligence-Analysis.pdf), chapter 8, CIA Center for the Study of Intelligence (1999):
 
-> When it comes to decisions and actions, we want to know how it made sense for someone to do what they did. And make no mistake: they thought what they were doing made sense. Otherwise, they wouldn't have done it.
+> Analysis of competing hypotheses (ACH) requires an analyst to explicitly identify all the reasonable alternatives and have them compete against each other for the analyst’s favor, rather than evaluating their plausibility one at a time.
 
-> Human error becomes a starting point, not a conclusion. (Dekker, 2009)
+> Because of its thoroughness, it is particularly appropriate for controversial issues when analysts want to leave an audit trail to show what they considered and how they arrived at their judgment.
 
-Mine each report for the conditions (the defaults, deadlines, dashboards, and pressures that made the failing action sensible) because those are the conditions your decision will run under.
+> For each hypothesis, ask yourself this question: If this hypothesis is true, what should I expect to be seeing or not seeing? [...] Note the absence of evidence as well as its presence.
 
-## 6. The verdict: count the silent cases, then take the outside view
+> Evidence is diagnostic when it influences your judgment on the relative likelihood of the various hypotheses [...] If an item of evidence seems consistent with all the hypotheses, it may have no diagnostic value. A common experience is to discover that most of the evidence supporting what you believe is the most likely hypothesis really is not very helpful, because that same evidence is also consistent with other hypotheses.
 
-The record shows the cases that produced a report. Wikipedia, [Survivorship bias](https://en.wikipedia.org/wiki/Survivorship_bias):
+> A fundamental precept of the scientific method is to proceed by rejecting or eliminating hypotheses, while tentatively accepting only those hypotheses that cannot be refuted.
 
-> Survivorship bias or survivor bias is a statistical error which results from concentrating on entities that passed a selection process over those that did not. This can lead to incorrect conclusions because of incomplete data.
+Test each finding against every candidate answer still in play, and prize the observation that can kill a candidate over the many that merely agree with the favorite.
 
-> During World War II, the statistician Abraham Wald described methods of estimating the vulnerability of various parts of an aircraft based on damage to surviving planes. [...] Given that there was only data from surviving aircraft, this work directly addresses the issue of survivorship bias.
+## 6. Words of estimative probability: report the judgment and its odds
 
-> the advice business is a monopoly run by survivors. When something becomes a non-survivor, it is either completely eliminated, or whatever voice it has is muted to zero (David McRaney)
+Sherman Kent, [Words of Estimative Probability](https://www.cia.gov/resources/csi/static/Words-of-Estimative-Probability.pdf), CIA Studies in Intelligence (1964), on what a finished estimate owes its reader:
 
-> [...] Nassim Taleb called the data obscured by survivorship bias "silent evidence".
+> It should set forth the community’s findings in such a way as to make clear to the reader what is certain knowledge and what is reasoned judgment, and within this large realm of judgment what varying degrees of certitude lie behind each key statement.
 
-Name the silent evidence (the deployments that failed quietly and shipped no postmortem, the successes nobody wrote up) and discount the record accordingly.
+On what “a serious possibility” meant to the people who wrote it:
 
-Then let the found cases outvote the plan. Kahneman and Tversky's method, Wikipedia, [Reference class forecasting](https://en.wikipedia.org/wiki/Reference_class_forecasting):
+> [...] each Board member had had somewhat different odds in mind and the low man was thinking of about 20 to 80, the high of 80 to 20.
 
-> Reference class forecasting is so named as it predicts the outcome of a planned action based on actual outcomes in a reference class of similar actions to that being forecast.
+> Let us talk of it in terms of odds or chances, and when we have made our best judgment let us assign it a word or phrase that is chosen from one of the five rough categories of likelihood on the chart. Let the judgment be unmistakable and let it be unmistakably ours.
 
-> People tend to underestimate the costs, completion times, and risks of planned actions, whereas they tend to overestimate the benefits of those same actions. Such error is caused by actors taking an "inside view", where focus is on the constituents of the specific planned action instead of on the actual outcomes of similar ventures that have already been completed.
+> If the matter is important and cannot be assigned an order of likelihood, but is plainly something which is neither certain to come about nor impossible, let us use the word “possible” or one of its stand-ins and with no modifier.
 
-> Reference class forecasting for a specific project involves the following three steps:
-> 1. Identify a reference class of past, similar projects.
-> 2. Establish a probability distribution for the selected reference class for the parameter that is being forecast.
-> 3. Compare the specific project with the reference class distribution, in order to establish the most likely outcome for the specific project.
-
-Return the verdict on the decision's terms: the modal outcome in the found reference class, the failure modes that recur across independent reports, and the silent cases the record cannot show.
+Report the answer the decision needs first, attach the odds you would defend for each key claim, and name the observation that would change the judgment.

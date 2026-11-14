@@ -1,115 +1,129 @@
 ---
 name: for-the-audience
 disable-model-invocation: true
-description: "Turn threads, notes, and review back-and-forth into a self-contained document for the audience that was not in the room. Use when a pile of working materials must stand alone for readers who lack the backstory: will a stranger be able to read it?"
+description: "Write up scattered discussion as a self-contained document for readers who were not in the room. Use when turning threads, notes, and review back-and-forth into a decision record, postmortem, proposal, or summary that must stand alone for outside or future readers."
 ---
 
 # For the Audience
 
-Working materials are written to the room that produced them; a document is written to the audience that was not in it. Eight moments, in the order the work meets them.
+A pile of threads, notes, and review back-and-forth becomes a document a stranger can read end to end. Seven moments, in the order the work meets them.
 
-## 1. Writer-based: what the materials are
+## 1. Audience analysis: the reader was not in the room
 
-Linda Flower, [Writer-Based Prose: A Cognitive Basis for Problems in Writing](https://mwover.com/wp-content/uploads/2018/05/flower-writer-based-prose.pdf) (College English 41(1), 1979):
-
-> In function, Writer-Based prose is a verbal expression written by a writer to himself and for himself. It is the record and the working of his own verbal thought. In its structure, Writer-Based prose reflects the associative, narrative path of the writer's own confrontation with her subject. In its language, it reveals her use of privately loaded terms and shifting but unexpressed contexts for her statements.
-
-> In contrast, Reader-Based prose is a deliberate attempt to communicate something to a reader. To do that it creates a shared language and shared context between writer and reader. It also offers the reader an issue-centered rhetorical structure rather than a replay of the writer's discovery process.
-
-> Good writing, therefore, is often the cognitively demanding transformation of the natural but private expressions of Writer-Based thought into a structure and style adapted to a reader.
-
-The thread and the notes replay the order in which the room discovered things; the document must be rebuilt around the reader. Find the privately loaded terms and the unexpressed contexts: each marks a place where the room's knowledge was doing the work.
-
-## 2. Audience: what the reader needs minus what they have
-
-Google's Technical Writing course, [Audience](https://developers.google.com/tech-writing/one/audience):
+Google, [Technical Writing One](https://developers.google.com/tech-writing/one/audience):
 
 > good documentation = knowledge and skills your audience needs to do a task − your audience's current knowledge and skills
 
 > In other words, make sure your document provides the information that your audience needs but doesn't already have.
 
-> Write down a list of everything your target audience needs to learn to accomplish goals.
+> Begin by identifying your audience's **role**(s).
 
-> Experts often suffer from the curse of knowledge, which means that their expert understanding of a topic ruins their explanations to newcomers. As experts, it is easy to forget that novices don't know what you already know.
+> Roles, by themselves, are insufficient for defining an audience. That is, you must also consider your audience's *proximity* to the knowledge. [...] experienced engineers typically know vastly more about their current project than new engineers on the same project.
 
-Name who reads this and list what the document owes them; the room's shared knowledge is invisible to the writer, so inventory it rather than trust memory of it.
+> Write down a list of everything your target audience needs to learn to accomplish goals. [...] If you are writing a design spec, then your list should focus on information your target audience should learn rather than on mastering specific tasks.
 
-## 3. The lead: the outcome first, details by weight
+> Writing to meet your audience's needs requires unselfish empathy. You must create explanations that satisfy your audience's curiosity rather than your own.
 
-Wikipedia, [Inverted pyramid (journalism)](https://en.wikipedia.org/wiki/Inverted_pyramid_(journalism)):
+Write down the reader's role, their proximity to the matter, and the list of things this document must teach them; that list measures every candidate the pile offers.
+
+## 2. Affinity diagram: sort the pile into themes
+
+Wikipedia, [Affinity diagram](https://en.wikipedia.org/wiki/Affinity_diagram):
+
+> The **affinity diagram** is a business tool used to organize ideas and data. [...] the term affinity diagram was devised by Jiro Kawakita in the 1960s and is sometimes referred to as the **KJ Method**.
+
+> It is also frequently used in contextual inquiry as a way to organize notes and insights from field interviews. It can also be used for organizing other freeform comments, such as open-ended survey responses, support call logs, or other qualitative data.
+
+> The affinity diagram organizes ideas with following steps:
+> 1. Record each idea on cards or notes.
+> 2. Look for ideas that seem to be related.
+> 3. Sort cards into groups until all cards have been used.
+
+> The process requires becoming deeply immersed in the data, which has benefits beyond the tangible deliverables.
+
+Give every claim, question, decision, and objection in the pile its own card, and sort until the clusters name the document's sections.
+
+## 3. Inverted pyramid: the answer heads the page
+
+Journalists write for readers who were not at the event. Wikipedia, [Inverted pyramid (journalism)](https://en.wikipedia.org/wiki/Inverted_pyramid_(journalism)):
+
+> The **inverted pyramid** is a metaphor used by journalists and other writers to illustrate how information should be prioritised and structured in prose [...] It is a way to communicate the basics about a topic in the initial sentences.
 
 > The widest part at the top represents the most substantial, interesting, and important information that the writer means to convey, illustrating that this kind of material should head the article, while the tapering lower portion illustrates that other material should follow in order of diminishing importance.
 
-> First, readers can leave the story at any point and understand it, even if they do not have all the details.
+> It is sometimes called a **summary news lead** style, or **bottom line up front** ([BLUF](https://en.wikipedia.org/wiki/BLUF_(communication))). The opposite, the failure to mention the most important, interesting or attention-grabbing elements of a story in the opening paragraphs, is called burying the lead.
 
-> The opposite, the failure to mention the most important, interesting or attention-grabbing elements of a story in the opening paragraphs, is called burying the lead
+> This system also means that information less vital to the reader's understanding comes later in the story, where it is easier to edit out for space or other reasons.
 
-Move what the room concluded to the opening; arrange what follows so the reader can stop anywhere and still carry the point away.
+Open the document with the point the pile reached, and let every later section matter less than the one before it.
 
-## 4. The ground: the context the room stood on
+## 4. Make things easy for your readers: the page supplies the room
 
-Malte Ubl, [Design Docs at Google](https://www.industrialempathy.com/posts/design-docs-at-google/), on the sections that bring a reader up to speed:
+Karl Fogel, [Producing Open Source Software](https://producingoss.com/en/you-are-what-you-write.html):
 
-> This section gives the reader a very rough overview of the landscape in which the new system is being built and what is actually being built. [...] The goal is that readers are brought up to speed but some previous knowledge can be assumed and detailed info can be linked to. This section should be entirely focused on objective background facts.
+> *Make things easy for your readers.* There's a ton of information floating around in any active open source project, and readers cannot be expected to be familiar with most of it—indeed, they cannot always be expected to know how to become familiar. Wherever possible, your posts should provide information in the form most convenient for readers.
 
-> Note, that non-goals aren't negated goals like "The system shouldn't crash", but rather things that could reasonably be goals, but are explicitly chosen not to be goals.
+> If you have to spend an extra two minutes to dig up the URL to a particular thread in the mailing list archives, in order to save your readers the trouble of doing so, it's worth it. If you have to spend an extra 5 or 10 minutes summarizing the conclusions so far of a complex thread, in order to give people context in which to understand your post, then do so.
 
-> [...] this section is one of the most important ones as it shows very explicitly why the selected solution is the best given the project goals and how other solutions, that the reader may be wondering about, introduce trade-offs that are less desirable given the goals.
+> [...] when there is a choice between *N* people making an effort and one person doing so, the project prefers the latter.
 
-Restore the background facts the room took for granted; fence the territory with goals and the chosen-not-to goals; name the rejected paths the reader would otherwise re-propose.
+> *Construct the Subject lines of new mails carefully.* The Subject line is the most important line in your mail, because it allows each other person in the project to decide whether or not to read more.
 
-## 5. The record: the decision and everything it costs
+Fogel again, on [the archives](https://producingoss.com/en/growth.html):
+
+> If a project's formal guidelines are its statutory law, the archives are its common law: a record of all decisions made and how they were arrived at.
+
+> [...] you should include pointers to them when you re-raise the topic, so people can see for themselves a) that they went nowhere, and b) that you did your homework, and therefore are probably saying something now that has not been said before.
+
+Put what the reader needs on the page in its most convenient form, link the threads the page stands on, and title it so a stranger can tell whether to read on.
+
+## 5. Architecture decision record: what the argument settled
 
 Michael Nygard, [Documenting Architecture Decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions):
 
-> One of the hardest things to track during the life of a project is the motivation behind certain decisions. A new person coming on to a project may be perplexed, baffled, delighted, or infuriated by some past decision. Without understanding the rationale or consequences, this person has only two choices: **Blindly accept the decision.** [...] **Blindly change it.** [...] It's better to avoid either blind acceptance or blind reversal.
+> One of the hardest things to track during the life of a project is the motivation behind certain decisions. A new person coming on to a project may be perplexed, baffled, delighted, or infuriated by some past decision.
+
+> Without understanding the rationale or consequences, this person has only two choices: **Blindly accept the decision.** [...] **Blindly change it.** [...] It's better to avoid either blind acceptance or blind reversal.
+
+> Each record describes a set of forces and a single decision in response to those forces.
+
+> **Context** This section describes the forces at play, including technological, political, social, and project local. These forces are probably in tension, and should be called out as such. The language in this section is value-neutral. It is simply describing facts.
 
 > **Decision** This section describes our response to these forces. It is stated in full sentences, with active voice. "We will …"
 
 > **Status** A decision may be "proposed" if the project stakeholders haven't agreed with it yet, or "accepted" once it is agreed. If a later ADR changes or reverses a decision, it may be marked as "deprecated" or "superseded" with a reference to its replacement.
 
-> **Consequences** This section describes the resulting context, after applying the decision. All consequences should be listed here, not just the "positive" ones. A particular decision may have positive, negative, and neutral consequences, but all of them affect the team and project in the future.
+> **Consequences** This section describes the resulting context, after applying the decision. All consequences should be listed here, not just the "positive" ones.
 
-> We will write each ADR as if it is a conversation with a future developer.
+> The whole document should be one or two pages long. We will write each ADR as if it is a conversation with a future developer.
 
-State what the room decided in full sentences, list every consequence including the ones that embarrass it, and mark what is still open so the record does not read as settled where it is not.
+Turn each argument the pile settled into a record of its forces, its "we will" decision, its status, and all of its consequences; mark what the pile left open as proposed.
 
-## 6. The voice: one document, not a transcript
+## 6. Curse of knowledge: hunt the room's shorthand
 
-The c2 Wiki's conventions for refactoring discussion into document, [ConvertThreadModeToDocumentMode](https://kidneybone.com/c2/wiki/ConvertThreadModeToDocumentMode):
+Wikipedia, [Curse of knowledge](https://en.wikipedia.org/wiki/Curse_of_knowledge):
 
-> Replace a thread mode conversation with a monologue that says the same thing and preserving as much of the original text as possible. Change the 1st person singular to 1st or 3rd person plural. Remove the inline attributions and put them at the end under "Contributors:".
+> The **curse of knowledge**, also called the **curse of expertise** or **expert's curse**, is a cognitive bias that occurs when a person who has specialized knowledge assumes that others share in that knowledge.
 
-> You need to synthesize the discussion in a way that is acceptable to most of the participants. [...] Discussions most need to be summarized when they get long, which usually means there are a lot of different opinions, making them hard to summarize.
+> [...] a knowledgeable person cannot accurately reconstruct what a person, be it themselves or someone else, without the knowledge would think, or how they would act.
 
-> It is a GoodThing to present in the Wiki both ideas as clearly and persuasively as possible. Do not attempt to make the Wiki pronounce only your truth.
+> The curse of knowledge is a difficult bias to correct. For instance, the cognitive bias does not reduce when you tell people about it or ask them to think more about the other's perspective. Financial incentives were equally ineffective in reducing the bias.
 
-And on why, the same Wiki's [DocumentMode](https://kidneybone.com/c2/wiki/DocumentMode):
+Read the draft listing every name, term, and referent the pile defined but the page does not, and give each a definition or a link at first use.
 
-> A good DocumentMode comment is easier for newcomers to understand than a ThreadMode one. Threads are full of transient misunderstandings and special cases. The important points don't stand out well. And they are full of egos.
+## 7. Cognitive walkthrough: try it on someone who was not there
 
-> If you write a comment and someone else queries one of your points or wants something clarified, don't write a 3rd comment: rewrite your original to make it clearer. And then delete the question so only your first comment remains.
+Wikipedia, [Cognitive walkthrough](https://en.wikipedia.org/wiki/Cognitive_walkthrough):
 
-Synthesize the voices into one unsigned voice; fold each answered question back into the text it clarified rather than leaving the exchange standing; move surviving disagreements into the rejected paths of moment 4.
+> The **cognitive walkthrough** method is a usability inspection method used to identify usability issues in interactive systems, focusing on how easy it is for new users to accomplish tasks with the system.
 
-## 7. The language: self-contained, terms before use
+> A cognitive walkthrough starts with a task analysis that specifies the sequence of steps or actions required by a user to accomplish a task, and the system responses to those actions. The designers and developers of the software then walk through the steps as a group, asking themselves a set of questions at each step.
 
-Wikipedia's guideline [Make technical articles understandable](https://en.wikipedia.org/wiki/Wikipedia:Make_technical_articles_understandable):
+> * **Will the user try to achieve the effect that the subtask has?**
+> * **Will the user notice that the correct action is available?**
+> * **Will the user understand that the wanted subtask can be achieved by the action?**
+> * **Does the user get appropriate feedback?**
 
-> Articles should be self-contained as much as possible, rather than relying on excessive links to explain unfamiliar concepts.
+> The walkthrough method does not test real users on the system. The walkthrough will often identify many more problems than you would find with a single, unique user in a single test session
 
-> Explain technical terms and expand acronyms when they are first used.
-
-> Check to make sure that technical terms are not used before they are defined.
-
-Expand the room's abbreviations and handles on first use; define every term before it carries weight; make each reference resolve inside the document or to a place the reader can open. The thread, the meeting, the private channel are all closed to them.
-
-## 8. The test: read it as the stranger
-
-George Gopen and Judith Swan, [The Science of Scientific Writing](https://web.archive.org/web/20231222113350/https://www.americanscientist.org/blog/the-long-view/the-science-of-scientific-writing) (American Scientist, 1990):
-
-> It does not matter how pleased an author might be to have converted all the right data into sentences and paragraphs; it matters only whether a large majority of the reading audience accurately perceives what the author had in mind.
-
-> When old information does not appear at all in a sentence, whether in the topic position or elsewhere, readers are left to construct the logical linkage by themselves. Often this happens when the connections are so clear in the writer's mind that they seem unnecessary to state; at those moments, writers underestimate the difficulties and ambiguities inherent in the reading process.
-
-Hand the draft to someone who was not in the room, or read it as that person; every stall marks an unexpressed context to restore.
+Run the walkthrough with a reader who never saw the pile: hand them the draft, record where they stall, and repair the page at those points.
