@@ -1,0 +1,3 @@
+[submodule "skills/lambda-ray"]
+	path = skills/lambda-ray
+	url = https://github.com/HeBtcd/lambda-ray.git
