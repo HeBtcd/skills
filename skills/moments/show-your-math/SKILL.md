@@ -1,12 +1,12 @@
 ---
 name: show-your-math
 disable-model-invocation: true
-description: "Defend a number, default, or estimate by showing where it came from: trace the reason it was set, rebuild the derivation, weigh it against similar finished cases, state the precision it earns, and record the source where it lives. Use when a figure is challenged on review, or when writing down a value that will have to stand later."
+description: "Defend a number, default, or estimate by showing where it came from: trace the reason it was set, rebuild the derivation, weigh it against similar finished cases, test the chain for the answers it rules out, state the precision it earns, and record the source where it lives. Use when a figure is challenged on review, or when writing down a value that will have to stand later."
 ---
 
 # Show Your Math
 
-A figure stands on where it came from. Six moments, in the order the challenge meets them.
+A figure stands on where it came from. Seven moments, in the order the challenge meets them.
 
 ## Chesterton's fence: the reason it was set
 
@@ -46,6 +46,20 @@ For an estimate of cost, time, or risk, the defense lives in finished cases of t
 > 3. Compare the specific project with the reference class distribution, in order to establish the most likely outcome for the specific project.
 
 Name the class of similar finished cases and locate the estimate inside what they actually did.
+
+## Von Neumann's elephant: the answers the chain rules out
+
+A chain built in sight of the figure can always be steered to it; reaching the figure then proves nothing. Fermi's question to Dyson, recounted in [A meeting with Enrico Fermi](https://doi.org/10.1038/427297a), Nature (2004):
+
+> "How many arbitrary parameters did you use for your calculations?" I thought for a moment about our cut-off procedures and said, "Four." He said, "I remember my friend Johnny von Neumann used to say, with four parameters I can fit an elephant, and with five I can make him wiggle his trunk." With that, the conversation was over.
+
+Popper's criterion, [Conjectures and Refutations](https://web.stanford.edu/~paulsko/papers/Popper_CandR.pdf) (1963):
+
+> Every 'good' scientific theory is a prohibition: it forbids certain things to happen. The more a theory forbids, the better it is.
+
+> A theory which is not refutable by any conceivable event is non-scientific. Irrefutability is not a virtue of a theory (as people often think) but a vice.
+
+Perturb each justified factor inside its warranted range; if the product can still be steered to the figure, the chain is a fit, not a derivation, and the figure preceded the math. Present the figure with the answers the chain rules out.
 
 ## False precision: the digits the inputs warrant
 
