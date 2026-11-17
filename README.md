@@ -28,7 +28,6 @@ npx skills add HeBtcd/skills
 | [deep-research](skills/moments/deep-research/SKILL.md) | A decision depends on primary-source production evidence, not summaries. |
 | [when-in-rome](skills/moments/when-in-rome/SKILL.md) | Writing code in an existing repo that already has its own conventions. |
 | [functional-programming](https://github.com/HeBtcd/lambda-ray/tree/main/skills/functional-programming/SKILL.md) | Modeling domains in types and pushing side effects to the edges (moved to lambda-ray). |
-| [name-the-witness](skills/personal/name-the-witness/SKILL.md) | Attaching checkable proof to state claims and keeping unverified claims at the boundary. |
 | [let-it-crash](skills/moments/let-it-crash/SKILL.md) | Auditing failure paths for detection, recovery, and restart limits. |
 | [open-from-day-one](skills/moments/open-from-day-one/SKILL.md) | Making a repo buildable, testable, and handoff-ready for a stranger. |
 | [performance-engineering](skills/moments/performance-engineering/SKILL.md) | Estimating, profiling, or proving a performance cost or speedup. |
