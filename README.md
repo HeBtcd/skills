@@ -42,7 +42,6 @@ npx skills add HeBtcd/skills
 | [straight-answer](skills/moments/straight-answer/SKILL.md) | Stripping defensiveness and padding from a reply before sending. |
 | [prove-it-wrong](skills/moments/prove-it-wrong/SKILL.md) | Trying to falsify your own diagnosis or plan before trusting it. |
 | [hebtcd-skill-creator](skills/personal/hebtcd-skill-creator/SKILL.md) | Creating or restructuring a skill in this repo. |
-| [walk-states](skills/personal/walk-states/SKILL.md) | Proving a change works using concrete before/after states instead of action logs. |
 
 ## License
 
