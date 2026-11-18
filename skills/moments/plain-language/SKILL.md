@@ -6,6 +6,8 @@ description: "Rewrite a spec, instruction, doc, or UI copy into plain language, 
 
 # Plain Language
 
+Plain language carries the same meaning to more readers. Seven moments, in the order the rewrite meets them.
+
 ## Write for your audience
 
 the Center for Plain Language's definition, quoted in the [plain language](https://en.wikipedia.org/wiki/Plain_language) entry:
@@ -47,6 +49,36 @@ William Strunk, Jr., [The Elements of Style](https://www.gutenberg.org/cache/epu
 > This requires not that the writer make all his sentences short, or that he avoid all detail and treat his subjects only in outline, but that he make every word tell.
 
 Cut every sentence and word that does no work for the reader, and make every word that remains tell.
+
+## Lists, tables, and headings: the shape the eye can scan
+
+the Federal Plain Language Guidelines on [Use lists](https://raw.githubusercontent.com/GSA/plainlanguage.gov/main/_pages/guidelines/organize/use-lists.md):
+
+> Lists highlight a series of steps, requirements, or pieces of information in a visually clear way. Use lists to help your user focus on important material.
+
+> Lists are also helpful in clarifying the chronological order of steps in a process. When you're outlining steps in a process, consider numbering the individual list items.
+
+> Readers get lost when you use more than two or three levels in a document.
+
+on [Use tables to make complex material easier to understand](https://raw.githubusercontent.com/GSA/plainlanguage.gov/main/_pages/guidelines/design/use-tables-to-make-complex-material-easier-to-understand.md):
+
+> Tables help your audience see relationships that are often times hidden in dense text. And for most readers, it's not necessary to understand all possibilities and conditions, only those that apply to the reader's situation.
+
+> An "if-then" table organizes the material by a situation (if something is the case) and the consequence (then something else happens).
+
+on [Add useful headings](https://raw.githubusercontent.com/GSA/plainlanguage.gov/main/_pages/guidelines/organize/add-useful-headings.md):
+
+> Well organized writing will still be difficult for users to follow if they can't see how it's organized. An effective way to reveal your document's organization is to use lots of useful headings.
+
+> There are three types of headings:
+>
+> - question headings
+> - statement headings
+> - topic headings
+
+> Topic Headings such as "General," "Application," and "Scope" are so vague they may confuse the user.
+
+Give each passage the shape its job wants: a series or a set of steps becomes a list (numbered where order matters, parallel construction and a lead-in before it), a map of conditions to consequences becomes an if-then table, and each cluster gets a heading that asks the reader's question or states its point rather than naming a topic.
 
 ## Sentences: one idea, the actor named, the reader addressed
 

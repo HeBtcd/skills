@@ -36,7 +36,6 @@ npx skills add HeBtcd/skills
 | [write-the-docs](skills/moments/write-the-docs/SKILL.md) | Drafting or syncing a README, design doc, ADR, or changelog. |
 | [for-the-audience](skills/moments/for-the-audience/SKILL.md) | Turning messy threads into a standalone doc for outside readers. |
 | [plain-language](skills/moments/plain-language/SKILL.md) | Cutting jargon and bloat from specs, instructions, or UI copy. |
-| [managing-up](skills/moments/managing-up/SKILL.md) | Reporting finished work or escalating a decision to someone without context. |
 | [review-the-pr](skills/moments/review-the-pr/SKILL.md) | Reviewing a huge diff or sweeping a codebase for a defect class. |
 | [straight-answer](skills/moments/straight-answer/SKILL.md) | Stripping defensiveness and padding from a reply before sending. |
 | [prove-it-wrong](skills/moments/prove-it-wrong/SKILL.md) | Trying to falsify your own diagnosis or plan before trusting it. |
